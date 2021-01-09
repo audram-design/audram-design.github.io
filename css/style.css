@@ -1,6 +1,7 @@
+
 header {
   text-align: center;
-  /* width: 100%; */
+  width: 100%;
   margin: auto;
 }
 
@@ -11,14 +12,7 @@ nav li {
 }
 nav li:hover {
   text-decoration: underline;
-}
-
-p {
-  text-align: center;
-  color: #707070;
-  font-size: 20px;
-  padding: 20px;
-  margin: auto;
+  text-decoration-color:#ec0b8c;
 }
 
 ul {
@@ -37,27 +31,41 @@ footer {
 
 }
 
-footer ul {
-  text-align: left;
-}
-
-/* .am-logo {
-    width: 23%;
-    padding: 1%;
-    text-align: center;
-  } */
-
 .navbar {
   color: #707070;
   display: inline-block;
   vertical-align: text-top;
-  width: 73%;
   padding: 1%;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #707070;
 }
 
 .bodyText {
   height: 600px;
-  padding: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: center;
+  color: #707070;
+}
+
+.buttonSmall {
+  width: 300px;
+  height: 45px;
+  object-fit: contain;
 }
 
 .headline {
@@ -96,10 +104,76 @@ footer ul {
   font-size: 32px;
 } 
 
-.menu {
+.footerMenu {
   float: left;
+  padding-left: 100px;
+  width: 50px;
+  height: 15px;
+  margin: 32px 32px 32px 0;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #707070;
 }
 
 .contact {
   float: right;
+  padding-right: 100px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: center;
+  color: #707070;
 }
+
+.webAddress {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: center;
+  color: #707070;
+}
+
+.contactNumber{
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: center;
+  color: #707070;
+}
+
+.Icon-awesome-linkedin {
+  
+  background-color: #707070;
+}
+
+#copyRight{
+  
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #707070;
+}
+
