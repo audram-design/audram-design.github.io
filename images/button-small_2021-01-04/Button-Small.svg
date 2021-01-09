@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="314" height="75" viewBox="0 0 314 75">
+    <defs>
+        <linearGradient id="o0l27kyxkb" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ec0b8c"/>
+            <stop offset="1" stop-color="#811151"/>
+        </linearGradient>
+        <filter id="urvufecr3a" width="295" height="75" x="10" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-color="#161616" flood-opacity=".2"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g>
+        <g filter="url(#urvufecr3a)" transform="translate(0 6) translate(0 -6)">
+            <rect width="277" height="57" fill="url(#o0l27kyxkb)" rx="25" transform="translate(19 6)"/>
+        </g>
+        <text fill="#fff" font-family="RobotoCondensed-Bold, Roboto Condensed" font-size="35px" font-weight="700" transform="translate(0 6) translate(0 5)">
+            <tspan x="77.413" y="37">Learn More</tspan>
+        </text>
+    </g>
+</svg>
