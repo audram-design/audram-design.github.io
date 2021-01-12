@@ -1,4 +1,8 @@
-
+/* * {
+  border-color: red;
+  border-width: 1px;
+  border-style: solid;
+} */
 header {
   text-align: center;
   width: 100%;
@@ -21,16 +25,6 @@ ul {
   padding: 0;
 }
 
-footer {
-  position: fixed;
-  text-align: center;
-  margin: auto;
-  width: 100%;
-  color: #707070;
-  background-color:#fff7ff;
-
-}
-
 .navbar {
   color: #707070;
   display: inline-block;
@@ -48,11 +42,14 @@ footer {
 }
 
 .bodyText {
-  height: 600px;
-  padding-left: 25px;
-  padding-right: 25px;
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
+  /* padding-left: 25px;
+  padding-right: 25px; */
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -98,14 +95,114 @@ footer {
   color: #707070;
 }
 
-.emphasis {
-  color: aqua;
-  font-weight: 600;
-  font-size: 32px;
-} 
+/* #cards{
+  display: flex;
+  align-items:center;
+  margin-left: 5%;
+  justify-content:space-between;
+  text-align: center;
+  width: 100%;
+  color: #707070;
+} */
+.fetch{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.fetch .left{
+  float: left;
+  margin-left: 10%;
+  padding: 40px;
+}
+.fetch .right{
+  float:right;
+  margin-right: 10%;
+  padding: 40px;
+}
+.usda{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.usda .left{
+  float: left;
+  margin-left: 10%;
+  padding: 40px;
+}
+.usda .right{
+  float:right;
+  margin-right: 10%;
+}
+.tvf{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.tvf .left{
+  float: left;
+  margin-left: 10%;
+}
+.tvf .right{
+  float:right;
+  margin-right: 10%;
+}
+.cardH2 {
+  justify-content:left;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 10px;
+  letter-spacing: normal;
+  color: #707070;
+}
+.cardH4 {
+  justify-content: left;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 5px;
+  letter-spacing: normal;
+  color: #707070;
+}
+.CardBodyText {
+  justify-content: left;
+  margin: 10%;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  color: #707070;
+}
+.fetchImage {
+  width: 500px;
+}
+
+#footer {
+  display: inline-block;
+  /* align-items:center;
+  justify-content:center;
+  text-align: center; */
+  width: 100%;
+  color: #707070;
+  background-color:#FCF1FC;
+
+}
 
 .footerMenu {
   float: left;
+  padding-left: 100px;
+  padding-top: 20px;
+  justify-content: start;
   padding-left: 100px;
   width: 50px;
   height: 15px;
@@ -124,8 +221,11 @@ footer {
 .contact {
   float: right;
   padding-right: 100px;
+  align-items: center;
+  justify-content: center;
+  padding-right: 100px;
   font-family: Montserrat;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -135,7 +235,7 @@ footer {
   color: #707070;
 }
 
-.webAddress {
+.email {
   font-family: Montserrat;
   font-size: 15px;
   font-weight: normal;
@@ -147,7 +247,7 @@ footer {
   color: #707070;
 }
 
-.contactNumber{
+.phone{
   font-family: Montserrat;
   font-size: 15px;
   font-weight: normal;
@@ -159,21 +259,27 @@ footer {
   color: #707070;
 }
 
-.Icon-awesome-linkedin {
-  
-  background-color: #707070;
-}
-
-#copyRight{
-  
+.copyRight{
+    clear: left;
+    text-align: center;
+    padding: 20px;
+    padding-top: 80px;
+    vertical-align: bottom;
+    /* align-items:flex-end;
+    justify-content: center; */
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;
-    text-align: left;
+    /* text-align: left; */
     color: #707070;
+}
+
+.linkedin{
+  width: 150px;
+  height: px;
 }
 
