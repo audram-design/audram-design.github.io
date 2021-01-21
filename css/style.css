@@ -9,6 +9,12 @@ header {
   margin: auto;
 }
 
+.amLogo{
+  width: 100%;
+  align-content: center;
+  margin-top: 100px;
+}
+
 nav li {
   display: inline-block;
   font-size: 20px;
@@ -45,9 +51,10 @@ ul {
   display: flexbox;
   align-items: center;
   justify-content: center;
-  margin: 10%;
-  /* padding-left: 25px;
-  padding-right: 25px; */
+  margin-bottom: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+  min-height: auto;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: normal;
@@ -60,95 +67,68 @@ ul {
 }
 
 .buttonSmall {
-  width: 300px;
-  height: 45px;
+  width: 40%;
+  max-width: 150px;
+  min-width: 100px;
+  margin: 15%;
   object-fit: contain;
+  display: grid;
+  justify-content: left;
+  align-items: left;
 }
 
-.headline {
-  width: 620px;
-  height: 127px;
-  margin: 224.2px 227px 52px 111px;
-  font-family: Montserrat;
-  font-size: 64px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.77;
-  letter-spacing: normal;
-  text-align: center;
-  color: #707070;
-}
+#cards{
+  width: 100%;
+  text-align: left;
+  margin: 0px 5%;
+  padding-bottom: 100px;
+  min-height: 500px;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-rows: 500px 500px 500px ;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 50px;
+  grid-template-areas:
+  "fetchLeft fetchRight" 
+  "usdaLeft usdaRight"
+  "tvfLeft tvfRight";
+} 
 
-.subheadline {
-  width: 620px;
-  height: 127px;
-  margin: 224.2px 227px 52px 111px;
-  font-family: Montserrat;
-  font-size: 40px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.77;
-  letter-spacing: normal;
-  text-align: center;
-  color: #707070;
-}
-
-/* #cards{
-  display: flex;
-  align-items:center;
-  margin-left: 5%;
-  justify-content:space-between;
-  text-align: center;
-  width: 100%;
-  color: #707070;
-} */
-.fetch{
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 70px;
-}
-.fetch .left{
-  float: left;
-  margin-left: 10%;
-  padding: 40px;
-}
-.fetch .right{
-  float:right;
-  margin-right: 10%;
-  padding: 40px;
-}
-.usda{
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 70px;
-}
-.usda .left{
-  float: left;
-  margin-left: 10%;
-  padding: 40px;
-}
-.usda .right{
-  float:right;
-  margin-right: 10%;
-}
-.tvf{
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 70px;
-}
-.tvf .left{
+#fetchLeft{  
   float: left;
   margin-left: 10%;
 }
-.tvf .right{
+
+#fetchRight{
   float:right;
   margin-right: 10%;
+  margin-left: 10%;
+
 }
+
+#usdaLeft{
+  float: left;
+  margin-left: 10%;
+  justify-content: left;
+
+}
+#usdaRight{
+  float:right;
+  margin-right: 10%;
+  margin-left: 10%;
+  justify-content: right;
+}
+
+#tvfLeft{
+  float: left;
+  margin-left: 10%;
+}
+#tvfRight{
+  float:right;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
 .cardH2 {
   justify-content:left;
   font-family: Montserrat;
@@ -159,6 +139,7 @@ ul {
   line-height: 10px;
   letter-spacing: normal;
   color: #707070;
+  display: grid
 }
 .cardH4 {
   justify-content: left;
@@ -170,10 +151,11 @@ ul {
   line-height: 5px;
   letter-spacing: normal;
   color: #707070;
+  display: grid;
 }
 .CardBodyText {
   justify-content: left;
-  margin: 10%;
+  margin: 0px 0%;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: normal;
@@ -182,16 +164,18 @@ ul {
   line-height: 1.23;
   letter-spacing: normal;
   color: #707070;
+  display: grid;
 }
+
 .fetchImage {
-  width: 500px;
+  width: 90%;
+  max-width: 500px;
 }
 
 #footer {
   display: inline-block;
-  /* align-items:center;
-  justify-content:center;
-  text-align: center; */
+
+  text-align: center; 
   width: 100%;
   color: #707070;
   background-color:#FCF1FC;
@@ -219,11 +203,8 @@ ul {
 }
 
 .contact {
-  float: right;
-  padding-right: 100px;
   align-items: center;
   justify-content: center;
-  padding-right: 100px;
   font-family: Montserrat;
   font-size: 20px;
   font-weight: bold;
@@ -260,13 +241,10 @@ ul {
 }
 
 .copyRight{
-    clear: left;
     text-align: center;
     padding: 20px;
     padding-top: 80px;
     vertical-align: bottom;
-    /* align-items:flex-end;
-    justify-content: center; */
     font-family: Montserrat;
     font-size: 15px;
     font-weight: normal;
@@ -274,7 +252,6 @@ ul {
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;
-    /* text-align: left; */
     color: #707070;
 }
 
@@ -283,3 +260,75 @@ ul {
   height: px;
 }
 
+
+@media all and (min-width: 1000px) {
+  #navbar {
+    display: none;
+  }
+  .amLogo{
+    width: 800px;
+  }
+  .bodyText {
+    
+  }
+}
+
+@media only screen and (max-width: 600px) { 
+  .amLogo{
+    width: 80%;
+  }
+
+  #fetchLeft{
+    margin: 0px;
+    width: 90%;
+  }
+
+  #usdaLeft{
+    margin: 0px;
+    width: 90%;
+  }
+
+  #tvfLeft{
+    margin: 0px;
+    width: 90%;
+  }
+
+  .buttonSmall{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cardH2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .cardH4{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .CardBodyText{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #cards {
+    grid-template-rows: 250px 400px 250px 400px 250px 400px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "fetchLeft"
+      "fetchRight"
+      "usdaLeft"
+      "usdaRight"
+      "tvfLeft"
+      "tvfRight";
+  }
+}

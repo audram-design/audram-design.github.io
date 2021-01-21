@@ -7,11 +7,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
-            <div class="am-logo">
-                <img src="images/am-logo_2021-01-04/am-logo.svg"  alt="Audra Miller Logo" />
+            <div>
+                <img src="images/am-logo_2021-01-04/am-logo.svg"  alt="Audra Miller Logo"  class="amLogo" />
             </div>
             <div>
                 <nav class="navbar">
@@ -29,70 +30,63 @@
                 <p>I am a UX/UI designer and endurance athlete.</p>
                 <p>I specialize in UI design with some knowledge of front-end development. 
                     I enjoy the challenge of solving user issues by creating innovative designs.
-                    My skills include Adobe XD among many other programs within Adobe Creative Suite, 
-                    Figma, InVision, GitHub.</p>
-                
-                <!-- <img src="images/button-small_2021-01-04/Button-Small.svg" alt="Learn More" class="buttonSmall" /> --->
+                    <!---- My skills include Adobe XD among many other programs within Adobe Creative Suite, 
+                    Figma, InVision, GitHub. --->
+                </p>
             </div>
         </section>
 
         <section id="cards">
 <!----- Fetch --------->
-            <div class="fetch">
-                <div class="left">
-                    <p class="cardH2">Mobile App</p>
-                    <p class="cardH4">Case Study</p>
-                    <p class="CardBodyText">A better way to search and <br>find your next fur friend.</p>
-                    <img src="images/button-small_2021-01-04/Button-Small.svg" alt="Learn More" class="buttonSmall" />
-                </div>
-                <div class="right">
-                    <img src="images/Fetch Images_2021-01-11/Fetch Images@3x.png" alt="Fetch App Screen Shots" class="fetchImage" />
-                </div>
+            <div id="fetchLeft">
+                <p class="cardH2">Mobile App</p>
+                <p class="cardH4">Case Study</p>
+                <p class="CardBodyText">A better way to search and find your next fur friend.</p>
+                <img src="images/button-small_2021-01-04/Button-Small.svg" alt="Learn More" class="buttonSmall" />
+            </div>
+            <div id="fetchRight">
+                <img src="images/Fetch Images_2021-01-11/Fetch Images@3x.png" alt="Fetch App Screen Shots" class="fetchImage" />
             </div>
 <!----- USDA ----------->    
-            <div class="usda">
-                <div class="right">
-                    <p class="cardH2">Website Redesign</p>
-                    <p class="cardH4">Case Study</p>
-                    <p class="CardBodyText">
-                        Giving an outdated <br>website 
-                        a new look and <br>feel while also
-                        making it <br>easier to navigate.
-                    </p>
-                    <img src="images/button-small_2021-01-04/Button-Small.svg" alt="Learn More" class="buttonSmall" />
-                </div>
-                <div class="left">
-                    <img src="images/USDA Images_2021-01-11/USDA Images@3x.png" alt="USDA Website Redesign Screen Shots" class="fetchImage" />
-                </div>
+            <div id="usdaLeft">
+                <p class="cardH2">Website Redesign</p>
+                <p class="cardH4">Case Study</p>
+                <p class="CardBodyText">
+                    Giving an outdated website 
+                    a new look and feel while also
+                    making it easier to navigate.
+                </p>
+                <img src="images/button-small_2021-01-04/Button-Small.svg" alt="Learn More" class="buttonSmall" />
+            </div>
+            <div id="usdaRight">
+                <img src="images/USDA Images_2021-01-11/USDA Images@3x.png" alt="USDA Website Redesign Screen Shots" class="fetchImage" />
             </div>
 <!----- TVF ------------->            
-            <div class="tvf">
-                <div class="left">
-                    <p class="cardH2">Website Redesign</p>
-                    <p class="cardH4">Case Study</p>
-                    <p class="CardBodyText">
-                        Complete a website redesign for 
-                        <br>Tucson Village Farm that is
-                        <br>clean, easy to use, trustworthy, 
-                        <br>and clearly communicates 
-                        the organization’s purpose. 
-                        </p>
-                    <img src="images/button-small_2021-01-04/Button-Small.svg" alt="Learn More" class="buttonSmall" />
-                </div>
-                <div class="right">
-                    <img src="images/TVF Images_2021-01-11/TVF Images@3x.png" alt="Tucson Village Farm Website Screen Shots" class="fetchImage" />
-                </div>
+            <div id="tvfLeft">
+                <p class="cardH2">Website Redesign</p>
+                <p class="cardH4">Case Study</p>
+                <p class="CardBodyText">
+                    Complete a website redesign for 
+                    Tucson Village Farm that is
+                    clean, easy to use, trustworthy, 
+                    and clearly communicates the 
+                    organization’s purpose. 
+                    </p>
+                <img src="images/button-small_2021-01-04/Button-Small.svg" alt="Learn More" class="buttonSmall" />
+            </div>
+            <div id="tvfRight">
+                <img src="images/TVF Images_2021-01-11/TVF Images@3x.png" alt="Tucson Village Farm Website Screen Shots" class="fetchImage" />
             </div>
         </section>
 
         <footer id="footer">
-            <div class="footerMenu">
+           <!-- <div class="footerMenu">
                 <ul>
                     <li>Work</li>
                     <li>About</li>
                     <li>Resume</li>
                 </ul>
-            </div>
+            </div> --->
             <div class="contact">
                 <p>Contact me:</p>
                 <p class="email">audra@amillerdesigns.com</p>
@@ -101,14 +95,6 @@
                     <img src="images/linkedin.svg" class="linkedin" alt="Linkedin"/> 
                 </a>
             </div>
-<!----------------
-            <div class="contact">
-                <p>Contact me:</p>
-                <p class="email">audra@amillerdesigns.com</p>
-                <p class="phone">484-975-8890</p>
-                <img src="images/linkedin.svg" class="linkedin" alt="Linkedin"/>
-            </div>
------------------->  
             <div class="copyRight">
                 <p>&#169; 2021 Audra Miller. All rights reserved.</p>
             </div>
