@@ -13,22 +13,26 @@
     </head>
     <body>
         <header>
-            <div>
+            <div class="topnav">
                 <img src="images/am-logo_2021-01-04/am-logo.svg"  alt="Audra Miller Logo"  class="amLogo" />
+                <div id="links">
+                    <a href="">Work</a>
+                    <a href="">About</a>
+                    <a href="">Resume</a>
+                    <a href="">Contact</a>
+                </div>
+                <!--ul>
+                    <li>Work</li>
+                    <li>About</li>
+                    <li> Resume</li>
+                    <li>Contact</li>
+                </ul-->
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
-                <nav id="navbar">
-                    <ul>
-                        <li>Work</li>
-                        <li>About</li>
-                        <li> Resume</li>
-                        <li>Contact</li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
-                <i class="fa fa-bars"></i>
-            </a>
+            <!--/div-->
 
         </header>
         <section class="bodyText">
