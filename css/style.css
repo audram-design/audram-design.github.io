@@ -31,9 +31,9 @@ ul {
   padding: 0;
 }
 
-.navbar {
+#navbar {
   color: #707070;
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: text-top;
   padding: 1%;
   font-family: Montserrat;
@@ -66,6 +66,25 @@ ul {
   color: #707070;
 }
 
+.basicText {
+  display: flexbox;
+  align-items: left;
+  justify-content: left;
+  margin-bottom: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+  min-height: auto;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #707070;
+}
+
 .buttonSmall {
   width: 40%;
   max-width: 150px;
@@ -73,8 +92,8 @@ ul {
   margin: 15%;
   object-fit: contain;
   display: grid;
-  justify-content: left;
-  align-items: left;
+  justify-content: center;
+  align-items: center;
 }
 
 #cards{
@@ -150,6 +169,7 @@ ul {
   font-style: normal;
   line-height: 5px;
   letter-spacing: normal;
+  text-align: left;
   color: #707070;
   display: grid;
 }
@@ -263,11 +283,17 @@ ul {
 
 @media all and (min-width: 1000px) {
   #navbar {
-    display: none;
+    display: inline-block;
   }
+
   .amLogo{
     width: 800px;
   }
+
+  #hamburger{
+    display: none;
+  }
+
   .bodyText {
     
   }
@@ -276,6 +302,14 @@ ul {
 @media only screen and (max-width: 600px) { 
   .amLogo{
     width: 80%;
+  }
+
+  #hamburger{
+    display: block;
+  }
+
+  nav li{
+    display: inline-block;
   }
 
   #fetchLeft{

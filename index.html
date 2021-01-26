@@ -8,22 +8,28 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="index.js"></script>
     </head>
     <body>
         <header>
             <div>
                 <img src="images/am-logo_2021-01-04/am-logo.svg"  alt="Audra Miller Logo"  class="amLogo" />
             </div>
-            <div>
-                <nav class="navbar">
+                <nav id="navbar">
                     <ul>
                         <li>Work</li>
                         <li>About</li>
-                        <li>Resume</li>
+                        <li> Resume</li>
                         <li>Contact</li>
                     </ul>
                 </nav>
             </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+
         </header>
         <section class="bodyText">
             <div>
