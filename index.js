@@ -10,7 +10,7 @@ function toggleMenu(){
   function resized() {
   
     var links = document.getElementById("links");
-  
+
     if (window.innerWith >= 600) {
       links.style.display = "block";
     } else {
