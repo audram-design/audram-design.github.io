@@ -36,16 +36,6 @@ header {
 }
 
 
-
-.btn-primary{
-  color: #FFFFF;
-
-  margin: 15%;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
 .basicText {
   display: flexbox;
   align-items: left;
@@ -282,7 +272,6 @@ header {
   }
 
   .topnav {
-    color: #707070;
     /* display: inline-block; */
     vertical-align: text-top;
     padding: 1%;
@@ -317,7 +306,7 @@ header {
   }
 
   .topnav a{
-    color: black;
+    color: #707070;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -333,12 +322,12 @@ header {
   }
 
   .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #FCF1FC;
+    color: #707070;
   }
 
   .active {
-    background-color: white;
+    background-color: #FCF1FC;
     color: white;
   }
 
