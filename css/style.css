@@ -54,7 +54,7 @@ header {
   color: #707070;
 }
 
-.buttonSmall {
+/* .buttonSmall {
   width: 40%;
   max-width: 150px;
   min-width: 100px;
@@ -63,6 +63,17 @@ header {
   display: grid;
   justify-content: center;
   align-items: center;
+} */
+
+.btn-primary{
+  background-color:#811151;
+  border-color:#811151;
+}
+
+.btn-primary:hover{
+  background-color: #eb42a2;
+  border-color:#eb42a2;
+  color:rgb(221, 221, 221);
 }
 
 #cards{
