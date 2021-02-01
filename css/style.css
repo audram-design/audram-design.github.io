@@ -7,10 +7,24 @@
 * {
   font-family: Montserrat, sans-serif;
 }
+
 header {
   text-align: center;
   width: 100%;
   margin: auto;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #707070;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #707070;
+  padding-bottom: 30px;
 }
 
 #links {
@@ -21,7 +35,7 @@ header {
   display: flexbox;
   align-items: center;
   justify-content: center;
-  margin-bottom: 15%;
+  margin-bottom: 100px;
   margin-left: 10%;
   margin-right: 10%;
   min-height: auto;
@@ -34,7 +48,6 @@ header {
   text-align: center;
   color: #707070;
 }
-
 
 .basicText {
   display: flexbox;
@@ -54,18 +67,8 @@ header {
   color: #707070;
 }
 
-/* .buttonSmall {
-  width: 40%;
-  max-width: 150px;
-  min-width: 100px;
-  margin: 15%;
-  object-fit: contain;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-} */
-
 .btn-primary{
+  margin-top: 30px;
   background-color:#811151;
   border-color:#811151;
 }
@@ -77,105 +80,61 @@ header {
 }
 
 #cards{
-  width: 100%;
-  text-align: left;
-  margin: 0px 5%;
-  padding-bottom: 100px;
-  min-height: 500px;
+  /* border-color: red;
+  border-width: 1px;
+  border-style: solid; */
+  text-align: center;  
   display: grid;
-  justify-content: space-evenly;
-  grid-template-rows: 500px 500px 500px ;
-  grid-template-columns: 1fr 1fr;
-  grid-row-gap: 50px;
+  justify-content: center;
+  grid-template-rows: auto ;
+  /* grid-template-columns: 1fr; */
+  grid-row-gap: 100px;
   grid-template-areas:
-  "fetchLeft fetchRight" 
-  "usdaLeft usdaRight"
-  "tvfLeft tvfRight";
+  "card-fetch" 
+  "card-usda"
+  "card-tvf";
 } 
 
-#fetchLeft{  
+.card{
+  /* border-color: red;
+  border-width: 1px;
+  border-style: solid; */
+  display: inline-block;
+  border-color: none;
+  border-style: none;
+  align-items: center;
+  align-content: center;
+  width: 800px;
+}
+
+.card img{
+  width: 400px;
+}
+
+.left{
+  /* border-color: red;
+  border-width: 1px;
+  border-style: solid; */
   float: left;
-  margin-left: 10%;
-}
-
-#fetchRight{
-  float:right;
-  margin-right: 10%;
-  margin-left: 10%;
-
-}
-
-#usdaLeft{
-  float: left;
-  margin-left: 10%;
-  justify-content: left;
-
-}
-#usdaRight{
-  float:right;
-  margin-right: 10%;
-  margin-left: 10%;
-  justify-content: right;
-}
-
-#tvfLeft{
-  float: left;
-  margin-left: 10%;
-}
-#tvfRight{
-  float:right;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-
-.cardH2 {
-  justify-content:left;
-  font-size: 30px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 10px;
-  letter-spacing: normal;
-  color: #707070;
-  display: grid
-}
-.cardH4 {
-  justify-content: left;
-  font-size: 20px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 5px;
-  letter-spacing: normal;
+  width: 45%;
   text-align: left;
-  color: #707070;
-  display: grid;
-}
-.CardBodyText {
-  justify-content: left;
-  margin: 0px 0%;
-  font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.23;
-  letter-spacing: normal;
-  color: #707070;
-  display: grid;
 }
 
-.fetchImage {
-  width: 90%;
-  max-width: 500px;
+.right{
+  /* border-color: red;
+  border-width: 1px;
+  border-style: solid; */
+  float:right;
 }
 
 #footer {
   display: inline-block;
-
   text-align: center; 
   width: 100%;
   color: #707070;
   background-color:#FCF1FC;
+  padding-top:50px;
+  margin-top:50px;
 
 }
 
@@ -234,17 +193,17 @@ header {
 }
 
 .copyRight{
-    text-align: center;
-    padding: 20px;
-    padding-top: 80px;
-    vertical-align: bottom;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.2;
-    letter-spacing: normal;
-    color: #707070;
+  text-align: center;
+  padding: 20px;
+  padding-top: 80px;
+  vertical-align: bottom;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #707070;
 }
 
 .linkedin{
@@ -301,7 +260,7 @@ header {
   }
 
 }
-
+/* 
 @media only screen and (max-width: 600px) { 
   .amLogo{
     width: 80%;
@@ -400,4 +359,4 @@ header {
   .btn-primary{
     align-items: center;
   }
-}
+} */
