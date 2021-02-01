@@ -95,6 +95,10 @@ h4 {
   "card-tvf";
 } 
 
+#card-fetch {
+  grid-area: card-fetch;
+}
+
 .card{
   /* border-color: red;
   border-width: 1px;
@@ -110,14 +114,21 @@ h4 {
 .card img{
   width: 400px;
 }
+.case-study-image {
+
+}
+
+.case-study-text {
+  width: 45%;
+}
 
 .left{
   /* border-color: red;
   border-width: 1px;
   border-style: solid; */
   float: left;
-  width: 45%;
   text-align: left;
+
 }
 
 .right{
@@ -125,6 +136,7 @@ h4 {
   border-width: 1px;
   border-style: solid; */
   float:right;
+  text-align: left;
 }
 
 #footer {
@@ -260,8 +272,9 @@ h4 {
   }
 
 }
-/* 
+
 @media only screen and (max-width: 600px) { 
+
   .amLogo{
     width: 80%;
   }
@@ -301,62 +314,51 @@ h4 {
     color: white;
   }
 
-
-  #fetchLeft{
-    margin: 0px;
-    width: 90%;
-  }
-
-  #usdaLeft{
-    margin: 0px;
-    width: 90%;
-  }
-
-  #tvfLeft{
-    margin: 0px;
-    width: 90%;
-  }
-
-  .buttonSmall{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .cardH2{
+  .cardBodyText{
     text-align: center;
     justify-content: center;
     align-items: center;
 
   }
 
-  .cardH4{
+  .card {
+    width: 100%;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-
-  }
-  
-  .CardBodyText{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-
   }
 
-  #cards {
-    grid-template-rows: 250px 400px 250px 400px 250px 400px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "fetchLeft"
-      "fetchRight"
-      "usdaLeft"
-      "usdaRight"
-      "tvfLeft"
-      "tvfRight";
+  .left {
+    float: none;
+    width: 100%;
+  }
+
+  .right {
+    float:none;
+    width: 100%;
+  }
+
+  .case-study-text {
+    width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+  .case-study-image {
+    text-align: center;
+    padding-bottom: 20px;
   }
 
   .btn-primary{
     align-items: center;
   }
-} */
+
+  #cards {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "card-fetch"
+      "card-usda"
+      "card-tvf";
+  }
+} 
