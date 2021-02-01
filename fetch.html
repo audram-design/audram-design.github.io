@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audra Miller Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="index.js"></script>
+
+        <!-- font awesome
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
+            crossorigin="anonymous" />
+        -->
+    </head>
+    <body  onresize="resized()">
+        <header>
+            <div class="topnav">
+                <img src="images/am-logo_2021-01-04/am-logo.svg"  alt="Audra Miller Logo"  class="amLogo" />
+                <div id="links">
+                    <a href="index.html">Work</a>
+                    <a href="">About</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="">Contact</a>
+                </div>
+                <!--ul>
+                    <li>Work</li>
+                    <li>About</li>
+                    <li> Resume</li>
+                    <li>Contact</li>
+                </ul-->
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <!--/div-->
+
+        </header>
+
+        <section id="fetch-cards">
+<!-- Fetch -->
+            <br />
+            <div id="intro" class="card">
+                <div class="case-study-image right">
+                    <img src="images/Fetch Images_2021-01-11/Fetch Images@3x.png" alt="Fetch App Screen Shots"/>
+                </div>
+                <div class="case-study-text left">
+                    <h2>Mobile App</h2>
+                    <h4>Case Study</h4>
+                    <p class="cardBodyText">A better way to search and find your next fur friend.</p>
+                    <button type="button" class="btn btn-outline-primary" onclick="window.location.href='https://xd.adobe.com/view/146ac664-ca5d-4775-9b34-58e8309924ac-4139/?fullscreen';">Load Prototype</button>
+                </div>
+                
+            </div>
+
+    <!-- Personas -->
+            <div id="persona" class="card">
+                <div class="case-study-image left">
+                    <img src="images/Fetch Images_2021-01-11/fetch-persona.png" alt="USDA Website Redesign Screen Shots" />
+                </div>
+                <div class="case-study-text right">
+                    <h2>Persona</h2>
+                    <p class="cardBodyText">
+                        Based on our research, we developed a User Persona. The User Persona helps to develop a dialog for the 
+                        User Journey Map.
+                    </p>
+                </div>
+                
+            </div>
+    <!-- User Journey --> 
+            <div id="journey" class="card">  
+                <div class="case-study-image right">
+                    <img src="images/Fetch Images_2021-01-11/fetch-user-journey-map.png" alt="Image of User Journey Map" />
+                </div>    
+                <div class="case-study-text left">
+                    <h2>User Journey Map</h2>
+                    <p class="cardBodyText">
+                        After we determined our key features, we developed a journey map that detailed our user, David, downloading Fetch to discover an adoptable dog that fits his unique needs. As you can see, his main pain point in the process was feeling overwhelmed with options but Fetch provided a unique and engaging experience in the search 
+                        for a new pet.
+                    </p>
+                </div>
+            </div>  
+    <!-- Card Sorting -->
+            <div id="card-sorting" class="card">
+                <div class="case-study-image right">
+                    <img src="images/Fetch Images_2021-01-11/fetch-card-sorting.png" alt="Card Sorting image"/>
+                </div>
+                <div class="case-study-text left">
+                    <h2>Card Sorting</h2>
+                    <p class="cardBodyText">During the interview process we found most people find the search for a dog overwhelming    because the information is scattered across multiple platforms and locations. Filtering to their needs is difficult.</p>
+                    <p class="cardBodyText">Using the data we collected from the interviews we created an affinity map to identify the similarities across the users.
+                    </p>
+                    <p class="cardBodyText">Key Findings:</p>
+                    <p class="cardBodyText">Technology is often difficult to use or has drawbacks.</p>
+                    <p class="cardBodyText">Information is presented in an outdated and confusing way.</p>
+                    <p class="cardBodyText">Users had very specific preferences in what they’re looking for in a pet.</p>
+                </div>
+            </div>
+
+    <!-- Sketches -->
+            <div id="sketches" class="card">
+                <div class="case-study-image left">
+                    <img src="images/Fetch Images_2021-01-11/fetch-sketches.png" alt="Image of hand drawn wireframes" />
+                </div>
+                <div class="case-study-text right">
+                    <h2>Sketches</h2>
+                    <p class="cardBodyText">
+                        Paper wireframes were created before moving onto the creation of Lo-Fi Wireframes. This helped to narrow down key features for focus on for the app.
+                    </p>
+                </div>
+                
+            </div>
+    <!-- Wireframes --> 
+            <div id="wireframes" class="card">  
+                <div class="case-study-image right">
+                    <img src="images/Fetch Images_2021-01-11/fetch-wireframes.png" alt="Examples of lo-fi Wireframes" />
+                </div>    
+                <div class="case-study-text left">
+                    <h2>Wireframes</h2>
+                    <p class="cardBodyText">Next we created wireframes and a Lo-Fi prototype.</p>
+                </div>
+            </div> 
+    <!-- User Testing -->
+            <div id="user-testing" class="card">
+                <div class="case-study-image right">
+                    <img src="images/Fetch Images_2021-01-11/fetch-user-testing.png" alt="Examples of Prototype Screens"/>
+                </div>
+                <div class="case-study-text left">
+                    <h2>User Testing</h2>
+                    <p class="cardBodyText">We conducted a several user tests and based off of those users tests we made a few more     alterations.
+                    </p>
+                    <p class="cardBodyText">Recommendations:</p>
+                    <p class="cardBodyText">“Apply Filter” button on pet discovery options</p>
+                    <p class="cardBodyText">Split enable location and notifications into two screens</p>
+                    <p class="cardBodyText">Additional search filter for pets that are spayed/neutered</p>
+                </div>
+            </div>
+
+    <!-- Hi-Fi Prototype -->
+            <div id="hi-fi-prototype" class="card">
+                <div class="case-study-image left">
+                    <img src="images/Fetch Images_2021-01-11/fetch-hi-fi-prototype.png" alt="Fetch Prototype Image" />
+                </div>
+                <div class="case-study-text right">
+                    <h2>Hi-Fi Prototype</h2>
+                    <button type="button" class="btn btn-outline-primary" onclick="window.location.href='https://xd.adobe.com/view/146ac664-ca5d-4775-9b34-58e8309924ac-4139/?fullscreen';">Load Prototype</button>
+                </div>
+                
+            </div>
+    <!-- Conclusion --> 
+            <div id="conclusion" class="card">  
+                <div class="case-study-image right">
+                    <img src="images/Fetch Images_2021-01-11/fetch-logo@3x.png" alt="Fetch Logo" />
+                </div>    
+                <div class="case-study-text left">
+                    <h2>Conclusion + Next Steps</h2>
+                    <p class="cardBodyText">
+                        Administrative accounts for the shelters to manage their data on the web or via the app.
+                    </p>
+                    <p class="cardBodyText">
+                        Include a contact form within a pet listing for general questions, scheduling a visit, or completing an adoption application.
+                    </p>
+                    <p class="cardBodyText">
+                        Post-adoption resources, including a help desk/chat bot and tips + tricks on training and transition.
+                    </p>
+                    <p class="cardBodyText">
+                        Expansion to cats and other animals.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+           <!-- <div class="footerMenu">
+                <ul>
+                    <li>Work</li>
+                    <li>About</li>
+                    <li>Resume</li>
+                </ul>
+            </div> --->
+            <div class="contact">
+                <p>Contact me:</p>
+                <p><a href="mailto:audra@amillerdesigns.com" class="email">audra@amillerdesigns.com</a></p>
+                <p class="phone">484-948-7891</p>
+                <a href="https://www.linkedin.com/in/audra-m-a384b991/"> 
+                    <img src="images/linkedin.svg" class="linkedin" alt="Linkedin"/> 
+                </a>
+            </div>
+            <div class="copyRight">
+                <p>&#169; 2021 Audra Miller. All rights reserved.</p>
+            </div>
+ 
+        </footer>
+    </body>
+</html>

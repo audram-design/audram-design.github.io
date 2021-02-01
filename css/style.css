@@ -17,13 +17,13 @@ header {
 h2 {
   font-size: 30px;
   font-weight: bold;
-  color: #707070;
+  color:  #4d4d4d;
 }
 
 h4 {
   font-size: 20px;
   font-weight: bold;
-  color: #707070;
+  color: #4d4d4d;
   padding-bottom: 30px;
 }
 
@@ -46,7 +46,7 @@ h4 {
   line-height: 1.23;
   letter-spacing: normal;
   text-align: center;
-  color: #707070;
+  color: #4d4d4d;
 }
 
 .basicText {
@@ -67,16 +67,16 @@ h4 {
   color: #707070;
 }
 
-.btn-primary{
+.btn-outline-primary{
   margin-top: 30px;
-  background-color:#811151;
-  border-color:#811151;
+  color:#eb42a2;
+  border-color: #eb42a2;
 }
 
-.btn-primary:hover{
+.btn-outline-primary:hover{
   background-color: #eb42a2;
   border-color:#eb42a2;
-  color:rgb(221, 221, 221);
+  color:#ffffff;
 }
 
 #cards{
@@ -94,6 +94,28 @@ h4 {
   "card-usda"
   "card-tvf";
 } 
+
+#fetch-cards{
+    /* border-color: red;
+  border-width: 1px;
+  border-style: solid; */
+  text-align: center;  
+  display: grid;
+  justify-content: center;
+  grid-template-rows: auto ;
+  /* grid-template-columns: 1fr; */
+  grid-row-gap: 100px;
+  grid-template-areas:
+  "intro" 
+  "persona"
+  "journey"
+  "card-sorting"
+  "sketches"
+  "wireframes"
+  "user-testing"
+  "hi-fi-prototype"
+  "conclusion";
+}
 
 #card-fetch {
   grid-area: card-fetch;
@@ -179,7 +201,7 @@ h4 {
   line-height: 1.23;
   letter-spacing: normal;
   text-align: center;
-  color: #707070;
+  color:#4d4d4d;
 }
 
 .email {
@@ -190,7 +212,11 @@ h4 {
   line-height: 1.23;
   letter-spacing: normal;
   text-align: center;
-  color: #707070;
+  color: #4d4d4d;
+}
+
+.email:hover{
+  color: #eb42a2;
 }
 
 .phone{
@@ -201,7 +227,7 @@ h4 {
   line-height: 1.23;
   letter-spacing: normal;
   text-align: center;
-  color: #707070;
+  color: #4d4d4d;
 }
 
 .copyRight{
