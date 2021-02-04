@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audra Miller Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="index.js"></script>
+
+        <!-- font awesome
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
+            crossorigin="anonymous" />
+        -->
+    </head>
+    <body  onresize="resized()">
+        <header>
+            <div class="topnav">
+                <img src="images/am-logo_2021-01-04/am-logo.svg"  alt="Audra Miller Logo"  class="amLogo" />
+                <div id="links">
+                    <a href="index.html">Work</a>
+                    <a href="">About</a>
+                    <a href="resume.html">Resume</a>
+                    <!-- <a href="">Contact</a> -->
+                </div>
+                <!--ul>
+                    <li>Work</li>
+                    <li>About</li>
+                    <li> Resume</li>
+                    <li>Contact</li>
+                </ul-->
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <!--/div-->
+
+        </header>
+
+        <section id="fetch-cards">
+<!-- USDA -->
+            <br />
+            <div id="intro" class="card">
+                <div class="case-study-image right">
+                    <img src="images/USDA Images_2021-01-11/USDA Images.png" alt="USDA Website Screen Shots"/>
+                </div>
+                <div class="case-study-text left">
+                    <h2>Website Redesign</h2>
+                    <h4>Case Study</h4>
+                    <p class="cardBodyText">Giving an outdated website a new look and feel while also making it easier to navigate.</p>
+                    <button type="button" class="btn btn-outline-primary" onclick="window.location.href='https://xd.adobe.com/view/a44a522e-5728-4ac9-bf08-8003f87454b1-f119/';">Load Prototype</button>
+                </div>
+            </div>
+
+    <!-- Proto Persona -->
+            <div id="persona" class="card">
+                <div class="case-study-image left">
+                    <img src="images/USDA Images_2021-01-11/proto-persona.png" alt="Image of Proto Persona" />
+                </div>
+                <div class="case-study-text right">
+                    <h2>Persona</h2>
+                    <p class="cardBodyText">Niki uses the USDA.gov site to stay up to date with new research and policies within the Biotechnology field. </p>
+                    <p class="cardBodyText">Niki also enjoys listening to podcasts and reading the blogs to stay informed about events happening all over the country.</p>
+                </div>
+            </div>
+    <!-- Card Sorting --> 
+            <div id="journey" class="card">  
+                <div class="case-study-image right">
+                    <img src="images/USDA Images_2021-01-11/card-sorting.png" alt="Image of Card Sorting Process" />
+                </div>    
+                <div class="case-study-text left">
+                    <h2>Card Sorting</h2>
+                    <p class="cardBodyText">
+                        Looking at the current site and making note of the various topics covered we discovered the site could benefit from new flow.
+                    </p>
+                </div>
+            </div>  
+    <!-- Site Map -->
+            <div id="card-sorting" class="card">
+                <div class="case-study-image left">
+                    <img src="images/USDA Images_2021-01-11/sitemap.png" alt="Site Map Image"/>
+                </div>
+                <div class="case-study-text right">
+                    <h2>Site Map</h2>
+                    <p class="cardBodyText">Main navigation was updated to helpmake the user experience easier especially when looking for a specific topic.</p>
+                </div>
+            </div>
+    <!-- Lo-Fi Prototypes --> 
+            <div id="wireframes" class="card">  
+                <div class="case-study-image right">
+                    <img src="images/USDA Images_2021-01-11/lo-fi-prototypes.png" alt="Image of Lo-Fi Prototypes" />
+                </div>    
+                <div class="case-study-text left">
+                    <h2>Lo-Fi Prototype</h2>
+                    <p class="cardBodyText">Next we created wireframes and a Lo-Fi prototype.</p>
+                </div>
+            </div> 
+    <!-- User Testing --> 
+        <div id="wireframes" class="card">  
+            <div class="case-study-image left">
+                <img src="images/USDA Images_2021-01-11/user-testing.png" alt="User Testing Examples" />
+            </div>    
+            <div class="case-study-text right">
+                <h2>User Testing</h2>
+                <p class="cardBodyText">We conducted a several user tests and based off of those users tests we made a few more alterations.</p>
+                <p class="cardBodyText">Recommendations:</p>
+                <p class="cardBodyText">Align search bar with logo on Desktop version</p>
+                <p class="cardBodyText">Change arrows on breadcrumbs to forward slash marks</p>
+            </div>
+        </div>
+
+    <!-- Hi-Fi Prototype -->
+            <div id="hi-fi-prototype" class="card">
+                <div class="case-study-image right">
+                    <img src="images/USDA Images_2021-01-11/hi-fi-prototype.png" alt="USDA Prototype Image" />
+                </div>
+                <div class="case-study-text leftt">
+                    <h2>Hi-Fi Prototype</h2>
+                    <button type="button" class="btn btn-outline-primary" onclick="window.location.href='https://xd.adobe.com/view/a44a522e-5728-4ac9-bf08-8003f87454b1-f119/';">Load Prototype</button>
+                </div>
+                
+            </div>
+    <!-- Conclusion --> 
+            <div id="conclusion" class="card">  
+                <div class="case-study-image left">
+                    <img src="images/USDA Images_2021-01-11/logo.png" alt="USDA Logo" />
+                </div>    
+                <div class="case-study-text right">
+                    <h2>Conclusion <br /> + Next Steps</h2>
+                    <p class="cardBodyText">
+                        Creation of more website pages and more user testing. 
+                    </p>
+                    <p class="cardBodyText">
+                        Add features like a live chat / help desk.
+                    </p>
+                    <p class="cardBodyText">
+                        Include working links for Social Media apps.
+                    </p>
+                    <p class="cardBodyText">
+                        Develop new redesigned website. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+           <!-- <div class="footerMenu">
+                <ul>
+                    <li>Work</li>
+                    <li>About</li>
+                    <li>Resume</li>
+                </ul>
+            </div> --->
+            <div class="contact">
+                <p>Contact me:</p>
+                <p><a href="mailto:audra@amillerdesigns.com" class="email">audra@amillerdesigns.com</a></p>
+                <p class="phone">484-948-7891</p>
+                <a href="https://www.linkedin.com/in/audra-m-a384b991/"> 
+                    <img src="images/linkedin.svg" class="linkedin" alt="Linkedin"/> 
+                </a>
+            </div>
+            <div class="copyRight">
+                <p>&#169; 2021 Audra Miller. All rights reserved.</p>
+            </div>
+ 
+        </footer>
+    </body>
+</html>

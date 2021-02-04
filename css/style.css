@@ -133,11 +133,11 @@ h4 {
   width: 800px;
 }
 
-.card img{
+.card img {
   width: 400px;
 }
 .case-study-image {
-
+  
 }
 
 .case-study-text {
@@ -163,7 +163,7 @@ h4 {
 
 #footer {
   display: inline-block;
-  text-align: center; 
+  text-align: center;
   width: 100%;
   color: #707070;
   background-color:#FCF1FC;
@@ -350,8 +350,7 @@ h4 {
   .card {
     width: 100%;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    justify-content: center;
   }
 
   .left {
@@ -367,10 +366,8 @@ h4 {
   .case-study-text {
     width: 100%;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-
   }
+
   .case-study-image {
     text-align: center;
     padding-bottom: 20px;
