@@ -134,8 +134,23 @@ h4 {
 }
 
 .card img {
+  /* border-color: red;
+  border-width: 1px;
+  border-style: solid; */
   width: 400px;
 }
+
+.card .icon{
+  /* border-color: red;
+  border-width: 1px;
+  border-style: solid; */
+  width: 200px;
+  vertical-align: center;
+  align-content: center;
+
+
+}
+
 .case-study-image {
   
 }
@@ -160,6 +175,8 @@ h4 {
   float:right;
   text-align: left;
 }
+
+
 
 #footer {
   display: inline-block;
