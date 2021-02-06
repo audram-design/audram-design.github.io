@@ -40,11 +40,7 @@ h4 {
   margin-right: 10%;
   min-height: auto;
   font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.23;
-  letter-spacing: normal;
   text-align: center;
   color: #4d4d4d;
 }
@@ -58,11 +54,7 @@ h4 {
   margin-right: 10%;
   min-height: auto;
   font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.23;
-  letter-spacing: normal;
   text-align: left;
   color: #707070;
 }
@@ -80,14 +72,10 @@ h4 {
 }
 
 #cards{
-  /* border-color: red;
-  border-width: 1px;
-  border-style: solid; */
   text-align: center;  
   display: grid;
   justify-content: center;
   grid-template-rows: auto ;
-  /* grid-template-columns: 1fr; */
   grid-row-gap: 100px;
   grid-template-areas:
   "card-fetch" 
@@ -96,14 +84,10 @@ h4 {
 } 
 
 #fetch-cards{
-    /* border-color: red;
-  border-width: 1px;
-  border-style: solid; */
   text-align: center;  
   display: grid;
   justify-content: center;
   grid-template-rows: auto ;
-  /* grid-template-columns: 1fr; */
   grid-row-gap: 100px;
   grid-template-areas:
   "intro" 
@@ -122,61 +106,43 @@ h4 {
 }
 
 .card{
-  /* border-color: red;
-  border-width: 1px;
-  border-style: solid; */
-  display: inline-block;
+  display:inline-block;
   border-color: none;
   border-style: none;
-  align-items: center;
-  align-content: center;
   width: 800px;
 }
 
 .card img {
-  /* border-color: red;
-  border-width: 1px;
-  border-style: solid; */
   width: 400px;
 }
 
 .card .icon{
-  /* border-color: red;
-  border-width: 1px;
-  border-style: solid; */
   width: 200px;
-  vertical-align: center;
-  align-content: center;
-
-
 }
 
-.case-study-image {
-  
+.left-column-image {
+  width: 48%;
+  float: left;
+  text-align: right;
 }
 
-.case-study-text {
-  width: 45%;
-}
-
-.left{
-  /* border-color: red;
-  border-width: 1px;
-  border-style: solid; */
+.left-column-text {
+  width: 48%;
   float: left;
   text-align: left;
-
 }
 
-.right{
-  /* border-color: red;
-  border-width: 1px;
-  border-style: solid; */
-  float:right;
+.right-column-text{
+  width: 48%;
   text-align: left;
+  float: right;
 }
 
-
+.right-column-image{
+  width: 48%;
+  text-align: left;
+  float: right;
+}
 
 #footer {
   display: inline-block;
@@ -265,7 +231,6 @@ h4 {
   width: 150px;
   height: px;
 }
-
 
 @media all and (min-width: 600px) {
   #hamburger{
