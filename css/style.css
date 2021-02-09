@@ -369,6 +369,33 @@ h4 {
       "card-tvf";
   }
 
+  .card {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+   
+  }
+
+  .left-column-text {
+    width: 100%;
+    text-align:center;
+  }
+  .right-column-text {
+    width: 100%;
+    text-align:center;
+
+  }
+  .left-column-image {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .right-column-image {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
   #fetch-cards{
     display: grid;
     grid-template-rows: auto ;
