@@ -287,6 +287,10 @@ h4 {
     width: 80%;
   }
 
+  /* #hamburger {
+    display: inline-block;
+  } */
+
   .topnav {
     overflow: hidden;
     position: relative;
