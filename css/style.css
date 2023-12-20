@@ -33,7 +33,7 @@ h4 {
 
 .bodyText {
   display: flexbox;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   margin-bottom: 100px;
   margin-left: 10%;
@@ -41,7 +41,7 @@ h4 {
   min-height: auto;
   font-size: 18px;
   line-height: 1.23;
-  text-align: center;
+  text-align: left;
   color: #4d4d4d;
 }
 
