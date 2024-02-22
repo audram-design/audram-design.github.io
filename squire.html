@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audra Miller Portfolio</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-6RYZPYPV0L"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-6RYZPYPV0L');
+            </script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="index.js"></script>
+
+        <!-- font awesome -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
+            crossorigin="anonymous" />
+       
+    </head>
+    <body  onresize="resized()">
+        <header>
+            <div class="topnav">
+                <img src="images/am-logo_2021-01-04/am-logo.svg"  alt="Audra Miller Logo"  class="amLogo" />
+                <div id="links">
+                    <a href="index.html">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="resume.html">Resume</a>
+                    <!-- <a href="">Contact</a> -->
+                </div>
+                <!--ul>
+                    <li>Work</li>
+                    <li>About</li>
+                    <li> Resume</li>
+                    <li>Contact</li>
+                </ul-->
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <!--/div-->
+
+        </header>
+
+        <section id="fetch-cards">
+<!-- Fetch -->
+            <br />
+            <div id="intro" class="card">
+                <div class="right-column-image">
+                    <img src="images/Squire/activeshooter-explain-devices.png" alt="Squire Solutions software user interface shown on desktop and mobile devices"/>
+                </div>
+                <div class="left-column-text">
+                    <h2>Squire Solutions</h2>
+                    <h4>Mobile and Web Applications</h4>
+                    <p class="cardBodyText">Key member of a cross-functional team dedicated to developing intuitive and visually 
+                        stunning products. My process involves conducting thorough user research to uncover insights that 
+                        inform design decisions, creating wireframes and prototypes to visualize concepts, and seamlessly 
+                        collaborating with developers to bring those ideas to life.</p>
+                    <!-- <button type="button" class="btn btn-outline-primary" onclick="window.location.href='https://xd.adobe.com/view/146ac664-ca5d-4775-9b34-58e8309924ac-4139/?fullscreen';">Load Prototype</button> -->
+                </div>
+            </div>
+
+    <!-- UX Research -->
+            <div id="persona" class="card">
+                <div class="left-column-image">
+                    <img src="images/Squire/contact_device_mock_blk.png" alt="Squires Solutions software inface shown on desktop, mobile and tablet" />
+                </div>
+                <div class="right-column-text">
+                    <h2>UX Research</h2>
+                    <p class="cardBodyText">
+                        - Conducted User Interviews <br />
+                        - Created User Perosonas <br />
+                        - Created User Journey Maps <br />
+                        - Card Sorting to Extract Key Findings <br />
+                        - Created Sketches <br />
+                        - Created Wireframes <br />
+                        - Created Protoypes 
+                    </p>
+                </div>
+            </div> 
+    <!-- Website Redesign -->
+            <div id="Website Redesign" class="card">
+                <div class="right-column-image">
+                    <img src="images/Squire/web-mobile-images.png" alt="Image of desktop version of the homepage with two mobile examples of the product pages" />
+                </div>
+                <div class="right-column-text">
+                    <h2>Website Rededsign</h2>
+                    <p class="cardBodyText">
+                        Created a responsive marketing website using WordPress. Designed graphics to present and explain 
+                        Squire Solutions software offerings to potention customers.
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+
+        <footer id="footer">
+           <!-- <div class="footerMenu">
+                <ul>
+                    <li>Work</li>
+                    <li>About</li>
+                    <li>Resume</li>
+                </ul>
+            </div> --->
+            <div class="contact">
+                <p>Contact me:</p>
+                <p><a href="mailto:audra@amillerdesigns.com" class="email">audra@amillerdesigns.com</a></p>
+                <p class="phone">484-948-7891</p>
+                <a href="https://www.linkedin.com/in/audra-m-a384b991/"> 
+                    <img src="images/linkedin.svg" class="linkedin" alt="Linkedin"/> 
+                </a>
+            </div>
+            <div class="copyRight">
+                <p>&#169; 2024 Audra Miller. All rights reserved.</p>
+            </div>
+ 
+        </footer>
+    </body>
+</html>
