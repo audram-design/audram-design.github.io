@@ -23,6 +23,12 @@ h2 {
   color:  #4d4d4d;
 }
 
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+
 h4 {
   font-size: 20px;
   font-weight: bold;
@@ -156,7 +162,7 @@ h4 {
   display: inline-block;
   text-align: center;
   width: 100%;
-  color: #707070;
+  color: #4A4A4A;
   background-color:#FCF1FC;
   padding-top:50px;
   margin-top:50px;
@@ -179,7 +185,7 @@ h4 {
   line-height: 1.23;
   letter-spacing: normal;
   text-align: left;
-  color: #707070;
+  color: #4A4A4A;
 }
 
 .contact {
@@ -232,11 +238,11 @@ h4 {
   font-style: normal;
   line-height: 1.2;
   letter-spacing: normal;
-  color: #707070;
+  color: #4A4A4A;
 }
 
 .linkedin{
-  width: 150px;
+  width: 200px;
   height: px;
 }
 
