@@ -22,23 +22,24 @@
             integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
             crossorigin="anonymous" />
        
-    </head>
-    <body class="body" onresize="resized()">
-        <header class="navbar">
-            <div class="logo"> <img src="images/am-logo_2021-01-04/logo-am.svg" alt="AM Logo" /> </div>
-            <nav class="nav-links">
-              <a href="#featured-work">Featured Work</a>
-              <a href="about.html">About</a>
-              <a href="resume.html">Experience</a>
-              <a href="#contact">Contact</a>
-            </nav>
-
-             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-             <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
-                <i class="fa fa-bars"></i>  
-            </a>
-
-          </header>
+            <header class="navbar">
+                <div class="logo">
+                  <img src="images/am-logo_2021-01-04/logo-am.svg" alt="AM Logo" />
+                </div>
+              
+                <!-- Hamburger icon -->
+                <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              
+                <!-- Nav links container -->
+                <nav class="nav-links" id="navMenu">
+                  <a href="#featured-work">Featured Work</a>
+                  <a href="about.html">About</a>
+                  <a href="resume.html">Experience</a>
+                  <a href="#contact">Contact</a>
+                </nav>
+              </header>
 
           <section class="hero">
             <div class="overlay">
@@ -146,5 +147,14 @@
             </div>
  
         </footer>
+        
+        <!--Call for nav hamburger menu-->
+        <script>
+            function toggleMenu() {
+              const nav = document.getElementById("navMenu");
+              nav.classList.toggle("show");
+            }
+          </script>
+
         </body>
 </html>

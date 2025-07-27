@@ -50,6 +50,12 @@
 
 }
 
+/* Default nav styles */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
 .hero {
   height: 100vh;
   background-image: url(../images/hero-sunset.svg); /* path to your image */
@@ -432,49 +438,36 @@ p {
 
 }
 
-@media only screen and (max-width: 600px) { 
-
-  .amLogo{
-    width: 70%;
-  }
-
-  /* #hamburger {
-    display: inline-block;
-  } */
-
-  .topnav {
-    overflow: hidden;
-    position: relative;
-  }
-
-  .topnav #links {
+/* Mobile styles */
+@media only screen and (max-width: 600px){
+  .nav-links {
     display: none;
+    flex-direction: column;
+    background-color: #1c1c1c;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 1;
   }
 
-  .topnav a{
-    color: #707070;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
+  .nav-links.show {
+    display: flex;
   }
 
-  .topnav a.icon {
-    background: white;
+  .icon {
     display: block;
     position: absolute;
-    right: 0;
-    top: 0;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #f35cb4;
   }
 
-  .topnav a:hover {
-    background-color: #FCF1FC;
-    color: #707070;
-  }
-
-  .active {
-    background-color: #FCF1FC;
-    color: white;
+  .navbar {
+    position: relative;
   }
 
   .cardBodyText{
