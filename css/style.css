@@ -473,6 +473,10 @@ p {
     color: #f35cb4;
   }
 
+  .icon:hover {
+    color: #CD348B; /* or any other color you'd like */
+  }
+
   .navbar {
     position: relative;
     background-color: rgba(28, 28, 28, 0.9);
