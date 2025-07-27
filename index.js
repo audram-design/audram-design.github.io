@@ -1,4 +1,4 @@
-/* older function
+
 function toggleMenu(){
     var links = document.getElementById("links");
     if (links.style.display === "block") {
@@ -18,8 +18,8 @@ function toggleMenu(){
       links.style.display = "none";
     }
   }
- */
 
+/* newer add
   function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     const menuIcon = document.getElementById('menu-icon');
@@ -34,3 +34,4 @@ function toggleMenu(){
       menuIcon.classList.add('fa-bars');
     }
   }
+   */
