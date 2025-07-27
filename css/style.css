@@ -18,6 +18,8 @@
 
 /* Navbar */
 .navbar {
+  background-color: rgba(28, 28, 28, 0.9); /* keep for all views */
+  position: relative;
   position: absolute;
   top: 0;
   width: 100%;
@@ -27,7 +29,9 @@
   align-items: center;
   background-color: rgba(28, 28, 28, 0.9);
   z-index: 2;
+  align-items: center;
 }
+
 
 .logo img {
   height: 32px;
@@ -404,36 +408,39 @@ p {
     align-content: center;
     margin-top: 100px;
   }
-
-  .topnav a {
-    display: inline-block;
-    font-size: 20px;
-    padding: 20px;
-    text-decoration: none;
-    color: #707070;
-
-  }
-  .topnav a:hover {
-    text-decoration: underline;
-    text-decoration-color:#ec0b8c;
-  }
-
-  .topnav {
-    /* display: inline-block; */
-    vertical-align: text-top;
-    padding: 1%;
-    font-size: 30px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.23;
-    letter-spacing: normal;
-    text-align: center;
-    color: #707070;
+  .navbar {
+    background-color: rgba(28, 28, 28, 0.9); /* keep for all views */
+    position: relative;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(28, 28, 28, 0.9);
+    z-index: 2;
+    align-items: center;
   }
   
-  .topnav {
-    display: inline-block;
+  
+  .logo img {
+    height: 32px;
+  }
+  
+  .nav-links a {
+    margin-left: 30px;
+    font-size: 16px;
+    color:#FCF1FC;
+    text-decoration: none;
+    transition: color 0.3s ease; /* smooth transition */
+  }
+  
+  .nav-links a:hover {
+    font-weight: 100 ;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    color:#f35cb4;
   }
 
 }
@@ -443,7 +450,7 @@ p {
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #1c1c1c;
+    background-color: rgba(28, 28, 28, 0.9); /* match web version */
     position: absolute;
     top: 60px;
     right: 0;
@@ -468,6 +475,7 @@ p {
 
   .navbar {
     position: relative;
+    background-color: rgba(28, 28, 28, 0.9);
   }
 
   .cardBodyText{
