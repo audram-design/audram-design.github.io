@@ -148,6 +148,9 @@ p {
 #links {
   display:block;
 }
+.overall {
+  background-color: #f7f7f7;
+}
 
 .bodyText {
   display: flexbox;
@@ -161,6 +164,7 @@ p {
   line-height: 1.23;
   text-align: left;
   color: #4d4d4d;
+  background-color: #f7f7f7;
 }
 
 .basicText {
