@@ -86,12 +86,23 @@ header {
   text-align: center;
 }
 
+.sub-section {
+  padding: 60px 40px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
 .section-title h4 {
   color: #6D1449;
   font-size: 30px;
   font-weight: bolder;
 }
 
+.sub-section h4 {
+  color: #6D1449;
+  font-size: 30px;
+  font-weight: bolder;
+}
 
 .hero h1 {
   font-size: 50px;
