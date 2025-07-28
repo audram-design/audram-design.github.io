@@ -24,31 +24,39 @@
        
     </head>
     <body  onresize="resized()">
-        <header>
-            <div class="topnav">
-                <img src="images/am-logo_2021-01-04/logo-am.svg"  alt="Audra Miller Logo"  class="amLogo" />
-                <div id="links">
-                    <a href="index.html">Work</a>
-                    <a href="">About</a>
-                    <a href="resume.html">Resume</a>
-                    <!-- <a href="">Contact</a> -->
-                </div>
-                <!--ul>
-                    <li>Work</li>
-                    <li>About</li>
-                    <li> Resume</li>
-                    <li>Contact</li>
-                </ul-->
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
-                    <i class="fa fa-bars"></i>  
-                </a>
+        <header class="navbar">
+            <div class="logo">
+              <img src="images/am-logo_2021-01-04/logo-am.svg" alt="AM Logo" />
             </div>
-            <!--/div-->
+          
+            <!-- Hamburger icon -->
 
-        </header>
-        <section class="bodyText">
-            <br /> <br />
+            <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
+                <i id="menu-icon" class="fa fa-bars"></i>
+            </a>
+          
+            <!-- Nav links container -->
+            <nav class="nav-links" id="navMenu">
+              <a href="index.html">Featured Work</a>
+              <a href="about.html">About</a>
+              <a href="experience.html">Experience</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </header>
+
+      <section class="hero-about">
+        <div class="overlay">
+          <h1>Built by Grit.  <br>  Driven by Curiosity. </h1> <br>
+          <h3>Every challenge is an invitation to grow. </h3>
+          <p> I design with purpose, lead with empathy, and bring bold ideas <br> to life, especially when the path forward isn't easy.</p>
+        </div>
+      </section>
+
+      <section class="sub-section">
+        <h4>The foundation of how I lead, learn, and build.</h4> 
+      </section>
+
+        <section class="bodyText" class="sub-section">
             <div>
                 <p>&quot;You gain strength, courage and confidence by every experience in which you really stop to look fear in the face. You must do the thing you think you cannot do.&quot;  </p>
                 <p>by Chrissie Wellington</p>
@@ -133,22 +141,18 @@
             </div>  
         </section>
 
-        <footer id="footer">
-           <!-- <div class="footerMenu">
-                <ul>
-                    <li>Work</li>
-                    <li>About</li>
-                    <li>Resume</li>
-                </ul>
-            </div> --->
-            <div class="contact">
-                <p>Contact me:</p>
-                <p><a href="mailto:audra@amillerdesigns.com" class="email">audra@amillerdesigns.com</a></p>
-                <p class="phone">484-948-7891</p>
-                <a href="https://www.linkedin.com/in/audra-m-a384b991/"> 
-                    <img src="images/linkedin.svg" class="linkedin" alt="Linkedin"/> 
-                </a>
+        <section class="connect" id="contact">
+            <div class="overlay">
+              <h1>Looking for a product designer who can <br>make clarity feel effortless?</h1> <br>
+               <a href="mailto:audra@amillerdesigns.com" class="btn btn-primary">Let's Connect!</i></a> <br><br><br>
+
+               <a href="https://www.linkedin.com/in/audra-m-a384b991/"> 
+                <img src="images/linkedin.svg" class="linkedin" alt="Linkedin"/> 
+               </a> 
             </div>
+        </section>
+
+        <footer id="footer">
             <div class="copyRight">
                 <p>&#169; 2025 Audra Miller. All rights reserved.</p>
             </div>
