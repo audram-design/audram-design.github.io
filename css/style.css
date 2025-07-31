@@ -133,7 +133,7 @@ header {
 /* Featured Work */
 .section-title {
   padding: 60px 40px;
-  background-color: #E6E6E6;
+  background-color: #f5f5f5;
   text-align: center;
 }
 
@@ -318,7 +318,7 @@ p {
 
 #cards{
   text-align: center;  
-  background-color: #E6E6E6;
+  background-color: #f5f5f5;
   display: grid;
   justify-content: center;
   grid-template-rows: auto ;
@@ -332,6 +332,7 @@ p {
 #fetch-cards{
   text-align: center;  
   display: grid;
+  background-color: #f5f5f5;
   justify-content: center;
   grid-template-rows: auto ;
   grid-row-gap: 100px;
@@ -356,7 +357,7 @@ p {
   border-color: none;
   border-style: none;
   width: 800px;
-  background-color: #E6E6E6;
+  background-color: #f5f5f5;
 }
 
 .card img {
