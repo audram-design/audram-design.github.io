@@ -101,15 +101,17 @@
 
 .hero-fetch {
   height: 100vh;
-  background-image: url(../images/Fetch/fetch_sunset.png); /* path to your image */
+  background-image: url(../images/Fetch/hero_fetchus.png); /* path to your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-items:self-end;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  justify-content: left;
+  text-align: left;
 }
 
 .hero-video {
