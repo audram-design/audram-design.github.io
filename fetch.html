@@ -25,30 +25,41 @@
             crossorigin="anonymous" />
        
     </head>
-    <body  onresize="resized()">
-        <header>
-            <div class="topnav">
-                <img src="images/am-logo_2021-01-04/logo-am.svg"  alt="Audra Miller Logo"  class="amLogo" />
-                <div id="links">
-                    <a href="index.html">Work</a>
-                    <a href="about.html">About</a>
-                    <a href="resume.html">Resume</a>
-                    <!-- <a href="">Contact</a> -->
-                </div>
-                <!--ul>
-                    <li>Work</li>
-                    <li>About</li>
-                    <li> Resume</li>
-                    <li>Contact</li>
-                </ul-->
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-            <!--/div-->
 
-        </header>
+
+    <body  onresize="resized()">
+        <header class="navbar">
+            <div class="logo">
+              <img src="images/am-logo_2021-01-04/logo-am.svg" alt="AM Logo" />
+            </div>
+          
+            <!-- Hamburger icon -->
+
+            <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
+                <i id="menu-icon" class="fa fa-bars"></i>
+            </a>
+          
+            <!-- Nav links container -->
+            <nav class="nav-links" id="navMenu">
+              <a href="#featured-work">Featured Work</a>
+              <a href="about.html">About</a>
+              <a href="experience.html">Experience</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </header>
+
+          <section class="hero-fetch">
+            <div class="overlay">
+              <h1>Simplifying Pet Adoption for <br> Shelters & Rescues</h1>
+              <p>Fetch is a purpose-built platform designed to <br> streamline the adoption process, reduce admin overhead,<br> 
+                and help more animals find loving homes faster and easier than ever.</p>
+              <a href="experience.html" class="btn btn-primary">View Experience</a>
+            </div>
+          </section>
+        
+          <section class="section-title" id="featured-work">
+            <h4>Featured Work</h4> 
+          </section>
 
         <section id="fetch-cards">
 <!-- Fetch -->
@@ -180,24 +191,20 @@
             </div>
         </section>
 
-        <footer id="footer">
-           <!-- <div class="footerMenu">
-                <ul>
-                    <li>Work</li>
-                    <li>About</li>
-                    <li>Resume</li>
-                </ul>
-            </div> --->
-            <div class="contact">
-                <p>Contact me:</p>
-                <p><a href="mailto:audra@amillerdesigns.com" class="email">audra@amillerdesigns.com</a></p>
-                <p class="phone">484-948-7891</p>
-                <a href="https://www.linkedin.com/in/audra-m-a384b991/"> 
-                    <img src="images/linkedin.svg" class="linkedin" alt="Linkedin"/> 
-                </a>
+        <section class="connect" id="contact">
+            <div class="overlay">
+              <h1>Looking for a product designer who can <br>make clarity feel effortless?</h1> <br>
+               <a href="mailto:audra@amillerdesigns.com" class="btn btn-primary">Let's Connect!</i></a> <br><br><br>
+
+               <a href="https://www.linkedin.com/in/audra-m-a384b991/"> 
+                <img src="images/linkedin.svg" class="linkedin" alt="Linkedin"/> 
+               </a> 
             </div>
+        </section>
+
+        <footer id="footer">
             <div class="copyRight">
-                <p>&#169; 2025 Audra Miller. All rights reserved.</p>
+                <p class="copyRight">&#169; 2025 Audra Miller <br><br> All rights reserved.</p>
             </div>
  
         </footer>
