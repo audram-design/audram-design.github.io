@@ -9,11 +9,11 @@
 }
 
 .alt-section {
-  background-color: #E6E6E6;
+  background-color: #F5F5F5;
 }
 
 .body {
-  background-color: #E6E6E6;
+  background-color: #F5F5F5;
 }
 
 /* Navbar */
@@ -135,6 +135,20 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+.section-hero {
+  height: 70vh;
+  background-image: url(../images/Squire/squire_alldevices.svg); /* path to your image */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #F5F5F5;
 }
 
 header {
