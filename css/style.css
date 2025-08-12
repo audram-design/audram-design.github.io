@@ -62,7 +62,7 @@
 
 .hero {
   height: 100vh;
-  background-image: url(../images/hero-sunset.svg); /* path to your image */
+  background-image: url(../images/hero-sunset.jpg); /* path to your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,7 +75,7 @@
 
 .hero-about {
   height: 100vh;
-  background-image: url(../images/about/about-bike.png); /* path to your image */
+  background-image: url(../images/about/about-bike.jpg); /* path to your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -88,7 +88,7 @@
 
 .hero-experience {
   height: 100vh;
-  background-image: url(../images/experience-sun.png); /* path to your image */
+  background-image: url(../images/experience-sun.jpg); /* path to your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,7 +101,7 @@
 
 .hero-squire {
   height: 100vh;
-  background-image: url(../images/Squire/milhero.png); /* path to your image */
+  background-image: url(../images/Squire/milhero.jpg); /* path to your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -114,7 +114,7 @@
 
 .hero-fetch {
   height: 100vh;
-  background-image: url(../images/Fetch/hero_fetchus.png); /* path to your image */
+  background-image: url(../images/Fetch/hero_fetchus.jpg); /* path to your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -139,7 +139,7 @@
 
 .section-hero {
   height: 70vh;
-  background-image: url(../images/Squire/squire_alldevices.svg); /* path to your image */
+  background-image: url(../images/Squire/squire_alldevices.jpg); /* path to your image */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
