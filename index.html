@@ -21,6 +21,25 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
             integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
             crossorigin="anonymous" />
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  const heroImages = [
+                    "images/hero-sunset.svg",
+                    "images/about/about-bike.png",
+                    "images/experience-sun.png",
+                    "images/Squire/milhero.png",
+                    "images/Squire/squire_alldevices.svg",
+                    "images/Fetch/hero_fetchus.png"
+                  ];
+              
+                  heroImages.forEach((src) => {
+                    const img = new Image();
+                    img.src = src;
+                  });
+                });
+              </script>
+
     </head>
     
     <body  onresize="resized()">
