@@ -23,9 +23,9 @@
             crossorigin="anonymous" />
 
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
+                window.addEventListener("load", () => {
                   const heroImages = [
-                    "images/hero-sunset.svg",
+                  "images/hero-sunset.svg",
                     "images/about/about-bike.png",
                     "images/experience-sun.png",
                     "images/Squire/milhero.png",
@@ -33,7 +33,7 @@
                     "images/Fetch/hero_fetchus.png"
                   ];
               
-                  heroImages.forEach((src) => {
+                  heroImages.forEach(src => {
                     const img = new Image();
                     img.src = src;
                   });
