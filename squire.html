@@ -23,114 +23,125 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
        
     </head>
-    <body  onresize="resized()">
+    <body  onresize="resized()" class="body">
+        <header class="navbar">
+            <div class="logo">
+              <img src="images/am-logo_2021-01-04/logo-am.svg" alt="AM Logo" />
+            </div>
+          
+            <!-- Hamburger icon -->
 
-        <header>
-            <div class="topnav">
-                <img src="images/am-logo_2021-01-04/logo-am.svg"  alt="Audra Miller Logo"  class="amLogo" />
-                <div id="links">
-                    <a href="index.html">Work</a>
-                    <a href="about.html">About</a>
-                    <a href="resume.html">Resume</a>
-                </div>
-        
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
-                    <i class="fa fa-bars"></i>
-                </a>
+            <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
+                <i id="menu-icon" class="fa fa-bars"></i>
+            </a>
+          
+            <!-- Nav links container -->
+            <nav class="nav-links" id="navMenu">
+              <a href="index.html">Featured Work</a>
+              <a href="about.html">About</a>
+              <a href="experience.html">Experience</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </header>
+
+          <section class="hero-squire">
+            <div class="overlay">
+                <h1>Built for Clarity. <br> Designed for the Mission.</h1>
+              <p> Crafting intuitive, high-stakes interfaces for military and <br> public safety users where every second counts and every detail matters.</p>
             </div>
-        </header>
-           
-        <section class="bodyText">
-            <br /><br />
-            <div>
-                <p>
-                    My journey at Squire Solutions reflects a deep commitment to design excellence and a thorough understanding of 
-                    product management dynamics. I've consistently embraced new challenges to meet evolving business needs, ensuring 
-                    that the products I help shape resonate with users and elevate the brand's identity. I am eager to leverage my 
-                    experience and passion for design in tackling fresh opportunities and contributing to future successes.
-                </p>      
-            </div>
-        </section>
+          </section>
+
+      <section class="sub-section">
+        <h4>Bridging strategy, design, and delivery to build <br> trusted systems that perform under pressure.</h4> 
+      </section>
+
 
         <!-- Squire Solutions -->
         <!-- Product Design and Product Management -->
         <section id="product-design-wrapper" style="text-align: center;">
-            <div class="card" style="text-align: left;">
-                <h2>Product Design & Product Management</h2>
-                <h4>Senior Level Designer</h4>
-            </div>
-            <br/><br/>
+
+            <section class="section-hero"></section>
+
             <div class="card">
                 <div class="right-column-image">
                     <br/><br/>
-                    <img src="images/Squire/contact_device_mock_blk.png" alt="Image of desktop version of the homepage with two mobile examples of the product pages" />
-                     
+                    <!-- <img src="images/Squire/contact_device_mock_blk.png" alt="Image of desktop version of the homepage with two mobile examples of the product pages" /> -->
+                    <h4>UX & Product Design</h4>
+                    <ul class="cardBodyText" style="text-decoration: none; list-style:circle;">
+                        <li>Visual Design & High-Fidelity Prototyping</li>
+                        <li>Interaction Design & Detail Workflows</li>
+                        <li>Design Systems & UI Consistency</li>
+                        <li>Information Architecture & Content Structure</li>
+                        <li>Persona Creation & Story Mapping</li>
+                        <li>End-to-End Product Experience</li>
+                    </ul>
+                    <br/><br/>
+                    <h4>Cross-Functional Execution</h4>
+                    <ul class="cardBodyText" style="text-decoration: none; list-style:circle;">
+                        <li>Coordinating with Engineering & Product Teams</li>
+                        <li>Handing off Robust Development Specs</li>
+                        <li>Iterating Rapidly and Shipping Efficiently</li>
+                        <li>Maintaining Communication & Alignment Across Teams</li>
+                    </ul>
+
+                    <br/>
                 </div>
                 <div class="right-column-text">
+                    <br/><br />
+                    <h4>Strategy & Leadership</h4>
+                    <ol class="cardBodyText" style="text-decoration: none; list-style:circle;">
+                        <li>Strategy & Mission Alignment</li>
+                        <li>Problem Definition (Why / What)</li>
+                        <li>Prioritization & Resource Planning</li>
+                        <li>Project Management & Deadline Ownership</li>
+                        <li>Driving Coordination & Execution</li>
+                        <li>Advocacy: User & Business</li>
+                        <li>Team Alignment & Gap Coverage</li>
+                    </ol>
+
                     <br/>
-                    <h4>Responsibilities included:</h4>
-                    <p class="cardBodyText">
-                        - Visual Design <br />
-                        - Prototyping <br />
-                        - Making and Iterating <br />
-                        - Interaction Details <br />
-                        - Design Systems <br />
-                        - Information Architecture <br />
-                        - Solving the problem - HOW <br />
-                        - Problem Definition - WHY/WHAT <br />
-                        - Research and Testing <br />
-                        - User Stories and Personas <br />
-                        - End-to-End Customer Experience <br />
-                        - Strategy and Mission <br />
-                        - Development Specs <br />
-                        - Cross-Functional Communication <br />
-                        - Advocating for the User <br />
-                        - Advocating for the Business <br />
-                        - Cross-Project Thinking <br />
-                        - Prioritization and Resourcing <br />
-                        - Driving and Coordinating <br />
-                        - Project Management & Setting Deadlines <br />
-                        - Fill Any Gaps on Team to Ship <br />
-                        - Keeping the Team Happy & Aligned <br />
-                    </p>
+                    <h4>Research & Usability</h4>
+                    <ul class="cardBodyText" style="text-decoration: none; list-style:circle;">
+                        <li>User Research & Problem Discovery</li>
+                        <li>Usability Testing & Iteration</li>
+                        <li>Solution Framing: <br>Problem > How > Outcome</li>
+                    </ul>
+
                 </div>
+
+        
             </div>
-            <br/><br/>
+            <br/>
         </section>
 
         <!-- Active Shooter Module -->
-        <section id="active-shooter-wrapper" style="text-align: center;" class="alt-section" >
+        <section id="active-shooter-wrapper" style="text-align: center;" >
             <br/><br/>
-            <div class="card alt-section" style="text-align: left;">
+            <div class="card" style="text-align: left;">
                 <h2>Active Shooter Workflow Application</h2>
-                <h4>Android & Web</h4>
+                <h4>Coordinated response in seconds, not minutes.</h4>
             </div>
             <br/><br/>
-            <div class="card alt-section">
+            <div class="card">
                 <div class="left-column-image">
                     <img src="images/Squire/activeshooter-nofly-device.png" alt="Squires Solutions software inface shown on desktop, mobile and tablet" />
                 </div>
                 <div class="right-column-text">
-                    <h4>Value Proposition</h4>
-                    
+                  
                     <p class="cardBodyText">
-                    Squire's Active Shooter Module delivers real-time situational awareness, enabling law enforcement teams to 
-                     respond faster and more effectively during critical incidents. The module provides live updates on shooter 
-                     locations, tracks all response units, and integrates essential command tools, resulting in more coordinated, 
-                     informed decision-making. <br /><br /> By minimizing communication delays and optimizing resource allocation, Squire's solution 
-                     enhances inter-agency coordination, preserves radio bandwidth, and ensures instant visibility of critical points, 
-                     ultimately saving lives.
+                        Squire's Active Shooter Module gives real-time visibility to law enforcement during critical incidents. 
+                        Teams can track shooter movement, unit positions, and manage response workflows directly in the field. </p>
+                    </p> 
+                    <p> With live mapping, perimeter tools, and integrated command features, responders minimize radio traffic, improve 
+                        coordination across agencies, and save critical minutes when it matters most. 
                     </p>
-
+                   
                     <button type="button" class="btn btn-outline-primary"  onclick="document.location='https://www.squiresolutions.com/product/active-shooter/'">View On Squire's Website</button>
-                    <br/><br/><br />
+                    <br/><br/>
                 </div>
             </div> 
             <br />
             <div class="card alt-section" style="text-align: left;">
-                <h4>KPIs</h4>
-
                 <p class="cardBodyText">
                     <ol style="text-decoration: none; list-style: none;">
                         <li><strong>Response Time Reduction</strong><br/>Decrease in incident response times by up to 40%, allowing teams to neutralize threats faster.</li><br/>
@@ -139,6 +150,7 @@
                         <li><strong>Casualty Management Efficiency</strong><br/>50% faster EMS response to casualty collection points, improving survival rates.</li><br/>
                         <li><strong>Perimeter Security Accuracy</strong><br/>100% real-time accuracy in establishing and adjusting secure perimeters for improved containment.</li>
                     </ol>
+                    <br/>
                     These measurable KPIs demonstrate the value Squire's Active Shooter Module brings to law enforcement, ensuring faster, more effective, 
                     and coordinated responses that save lives during high-risk situations.
                 </p>
@@ -150,8 +162,8 @@
         <section id="medevac-wrapper" style="text-align: center;">
             <br/><br/>
             <div class="card" style="text-align: left;">
-                <h2>MEDEVAC Workflow Application</h2>
-                <h4>Android & Web</h4>
+                <h2>MEDEVAC Module</h2>
+                <h4>Every second counts. Make each one matter.</h4>
             </div>
             <br/><br/>
             <div class="card">
@@ -160,25 +172,21 @@
                 </div>
 
                 <div class="right-column-text">
-                    <h4>Value Proposition</h4>
+                    
                     <p class="cardBodyText">
-                        Squire Solutions' MEDEVAC Module transforms the speed and accuracy of battlefield medical evacuations by reducing response times 
-                        from minutes to seconds. Our advanced digital platform provides law enforcement and emergency response teams with real-time 
-                        communication tools, biometric tracking, and seamless system integration, allowing critical information to be transmitted and 
-                        acted upon in under 1 minute.
+                        The MEDEVAC Module transforms the speed and accuracy of battlefield medical evacuations by reducing response times 
+                        from minutes to seconds. 
                         <br /><br />
-                        This efficiency minimizes human error, reduces information gaps, and maximizes the golden hour for lifesaving medical 
-                        intervention. With Squire Solutions, decision-makers receive up-to-the-second data, ensuring that medical teams are equipped 
-                        with the information they need for rapid deployment and improved survival rates.
+                        By eliminating information gaps and minimizing human error, Squire ensures faster deployment, accurate medical 
+                        decision-making, and optimized use of the golden hour; when lives are most at risk.
                     </p>
                    
                     <button type="button" class="btn btn-outline-primary"  onclick="document.location='https://www.squiresolutions.com/medevac/'">View On Squire's Website</button>
-                    <br/><br/><br />
+                    <br/><br/>
                 </div>  
             </div>  
             <br/>
             <div class="card" style="text-align: left;">
-                <h4>KPIs</h4>
 
                 <p class="cardBodyText">
                     <ol style="text-decoration: none; list-style: none;">
@@ -188,6 +196,7 @@
                         <li><strong>Communication Efficiency</strong><br/>Provides uninterrupted, real-time data sharing between teams in the field and command, reducing confusion and miscommunication.</li><br/>
                         <li><strong>Biometric Tracking</strong><br/>Continuously monitors patient vitals, allowing for faster and more accurate medical decision-making.</li>
                     </ol>
+                    <br/>
                     These KPIs track significant improvements in MEDEVAC operations, including a drastic reduction in time to launch from an average of 22.7 minutes to under 1 minute, the near 
                     elimination of human error through automated data transmission, maximized golden hour utilization by streamlining the MEDEVAC request process, enhanced communication efficiency 
                     with real-time data sharing between teams and command, and continuous biometric tracking for faster, more accurate medical decision-making.
@@ -197,11 +206,11 @@
         </section>  
         
         <!-- UAS Module -->
-        <section id="uas-module-wrapper" style="text-align: center;" class="alt-section" >
+        <section id="uas-module-wrapper" style="text-align: center;">
             <br/><br/>
             <div class="card alt-section" style="text-align: left;">
-                <h2>UAS Workflow Application</h2>
-                <h4>Android</h4>
+                <h2>UAS Module</h2>
+                <h4>Faster response, broader coverage, and higher mission success rates.</h4>
             </div>
             <br/><br/>
             <div class="card alt-section">
@@ -210,27 +219,25 @@
                 </div>
 
                 <div class="right-column-text">
-                <h4>Value Proposition</h4>
+            
                 <p class="cardBodyText">
-                    Squire's UAS Module revolutionizes how operators interact with drones by shifting from a 1:1 control model to a 1:Many system. 
-                    <br />
-                    The platform enables seamless, AI-enhanced, semi-autonomous drone behaviors, allowing operators to manage multiple drones 
+                    The UAS Module revolutionizes how operators interact with drones by shifting from a 1:1 control model to a 1:Many system. 
+                    <br /><br />
+                    The platform enables seamless, semi-autonomous drone behaviors, allowing operators to manage multiple drones 
                     simultaneously while maintaining full situational awareness. Operators can control, monitor, and modify drone behaviors on 
                     the fly, ensuring faster, more effective mission outcomes. 
-                    <br /><br />
-                    Squire's UAS Module minimizes human workload, optimizes operational 
-                    efficiency, and enhances real-time decision-making, making it an essential tool in dynamic environments.
+                   
+                
                 </p>
 
                 <!-- <button type="button" class="btn btn-primary">View Case Study</button> -->
                 <button type="button" class="btn btn-outline-primary"  onclick="document.location='https://www.squiresolutions.com/uas/'">View On Squire's Website</button>
-                <br/><br/><br />
+                <br/><br/>
                 </div>
             </div>    
             <br/>
             <div class="card alt-section" style="text-align: left;">
-                <h4>KPIs</h4>
-
+               
                 <p class="cardBodyText">
                     <ol style="text-decoration: none; list-style: none;">
                         <li><strong>Response Time Efficiency</strong><br/>Time reduction in managing drone swarms compared to traditional single-drone control.<br/> Target: Reduce time to deploy multiple drones by 80%.</li><br/>
@@ -240,14 +247,15 @@
                         <li><strong>Mission Success Rate</strong><br/>Percentage of missions successfully completed with drone swarms.<br/>Target: Achieve a 95% success rate in mission execution using the UAS Module.</li><br/>
                         <li><strong>Airspace Deconfliction</strong><br/>Time taken to achieve seamless deconfliction and prioritization of drone swarms.<br/>Target: Reduce airspace conflicts by 90%.</li>
                     </ol>
+                    <br/>
                     These KPIs track the effectiveness of Squire's UAS Module in transforming drone operations, increasing efficiency, 
                     reducing errors, and maximizing mission success.
                 </p>
             </div>
-            <br/><br/>
+            <br/><br/><br/><br/>
         </section>
-    
-        <!-- Website Redesign -->
+    <!-- 
+        -- Website Redesign --
         <section id="website-redesign-wrapper" style="text-align: center;">
             <br/><br/>
             <div class="card">
@@ -266,18 +274,21 @@
                 </div>
             </div> 
         </section>
+    -->
+        <section class="connect" id="contact">
+            <div class="overlay">
+              <h1>Looking for a product designer who can <br>make clarity feel effortless?</h1> <br>
+               <a href="mailto:audra@amillerdesigns.com" class="btn btn-primary">Let's Connect!</i></a> <br><br><br>
+
+               <a href="https://www.linkedin.com/in/audra-m-a384b991/"> 
+                <img src="images/linkedin.svg" class="linkedin" alt="Linkedin"/> 
+               </a> 
+            </div>
+        </section>
 
         <footer id="footer">
-            <div class="contact">
-                <p>Contact me:</p>
-                <p><a href="mailto:audra@amillerdesigns.com" class="email">audra@amillerdesigns.com</a></p>
-                
-                <a href="https://www.linkedin.com/in/audra-m-a384b991/"> 
-                    <img src="images/linkedin.svg" class="linkedin" alt="Linkedin"/> 
-                </a>
-            </div>
             <div class="copyRight">
-                <p>&#169; 2025 Audra Miller. All rights reserved.</p>
+                <p class="copyRight">&#169; 2025 Audra Miller <br><br> All rights reserved.</p>
             </div>
         </footer>
     </body>

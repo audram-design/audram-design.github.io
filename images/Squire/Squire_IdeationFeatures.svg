@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1334" viewBox="0 0 1920 1334">
+  <defs>
+    <clipPath id="clip-Ideation_and_Features">
+      <rect width="1920" height="1334"/>
+    </clipPath>
+  </defs>
+  <g id="Ideation_and_Features" data-name="Ideation and Features" clip-path="url(#clip-Ideation_and_Features)">
+    <rect width="1920" height="1334" fill="#f8f8f8"/>
+    <g id="Rectangle_108" data-name="Rectangle 108" transform="translate(129 967)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="1691" height="319" stroke="none"/>
+      <rect x="0.5" y="0.5" width="1690" height="318" fill="none"/>
+    </g>
+    <g id="frame" transform="translate(0 -86)">
+      <rect id="Rectangle_147669" data-name="Rectangle 147669" width="820" height="360" transform="translate(180 200)" fill="none" stroke="#e0e0e0" stroke-width="4"/>
+      <rect id="Rectangle_147672" data-name="Rectangle 147672" width="820" height="360" transform="translate(180 560)" fill="none" stroke="#e0e0e0" stroke-width="4"/>
+      <rect id="Rectangle_147670" data-name="Rectangle 147670" width="820" height="360" transform="translate(1000 200)" fill="none" stroke="#e0e0e0" stroke-width="4"/>
+      <rect id="Rectangle_147671" data-name="Rectangle 147671" width="820" height="360" transform="translate(1000 560)" fill="none" stroke="#e0e0e0" stroke-width="4"/>
+    </g>
+    <g id="matrix" transform="translate(0 -86)">
+      <text id="label" transform="translate(118 300) rotate(-90)" fill="#101010" font-size="24" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="0">Impact +</tspan></text>
+      <text id="label-2" data-name="label" transform="translate(118 958) rotate(-90)" fill="#101010" font-size="24" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="0">Impact -</tspan></text>
+      <text id="label-3" data-name="label" transform="translate(1735 998)" fill="#101010" font-size="24" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="0">Effort +</tspan></text>
+      <text id="label-4" data-name="label" transform="translate(140 998)" fill="#101010" font-size="24" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="0">Effort -</tspan></text>
+      <g id="Element_-_Flowchart_connector_Straight_b_" data-name="Element - Flowchart connector [Straight b]" transform="translate(147 960) rotate(180)">
+        <path id="line_color_border_" data-name="line [color_border]" d="M389,100V860" transform="translate(-382 -100)" fill="none" stroke="#101010" stroke-width="4"/>
+        <g id="arrow_head" data-name="arrow head" transform="translate(14.143 752.929) rotate(135)">
+          <line id="line_color_border_2" data-name="line [color_border]" x2="10" fill="none" stroke="#101010" stroke-linecap="round" stroke-width="3.5"/>
+          <line id="line_color_border_3" data-name="line [color_border]" y2="10" transform="translate(10)" fill="none" stroke="#101010" stroke-linecap="round" stroke-width="3.5"/>
+        </g>
+      </g>
+      <g id="Element_-_Flowchart_connector_Straight_b_2" data-name="Element - Flowchart connector [Straight b]" transform="translate(140.001 965) rotate(-90)">
+        <path id="line_color_border_4" data-name="line [color_border]" d="M389,100V1780" transform="translate(-382 -100)" fill="none" stroke="#101010" stroke-width="4"/>
+        <g id="arrow_head-2" data-name="arrow head" transform="translate(14.143 1672.929) rotate(135)">
+          <line id="line_color_border_5" data-name="line [color_border]" x2="10" fill="none" stroke="#101010" stroke-linecap="round" stroke-width="3.5"/>
+          <line id="line_color_border_6" data-name="line [color_border]" y2="10" transform="translate(10)" fill="none" stroke="#101010" stroke-linecap="round" stroke-width="3.5"/>
+        </g>
+      </g>
+    </g>
+    <g id="Post-It_Element" data-name="Post-It Element" transform="translate(1384 232)">
+      <rect id="background_color_fill_" data-name="background [color_fill]" width="160" height="120" fill="#26ccbf"/>
+      <text id="label-5" data-name="label" transform="translate(10 30)" fill="#101010" font-size="14" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="10">Auto Sync </tspan></text>
+      <rect id="sticker" width="160" height="20" opacity="0.35" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+    <g id="Post-It_Element-2" data-name="Post-It Element" transform="translate(528 232)">
+      <rect id="background_color_fill_2" data-name="background [color_fill]" width="160" height="120" fill="#26ccbf"/>
+      <text id="label-6" data-name="label" transform="translate(10 30)" fill="#101010" font-size="14" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="10">Merge workflows for </tspan><tspan x="0" y="30">Fire and EMTs (cuts </tspan><tspan x="0" y="50">down communication </tspan><tspan x="0" y="70">over flow)</tspan></text>
+      <rect id="sticker-2" data-name="sticker" width="160" height="20" opacity="0.35" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+    <g id="Post-It_Element-3" data-name="Post-It Element" transform="translate(900 160)">
+      <rect id="background_color_fill_3" data-name="background [color_fill]" width="160" height="120" fill="#26ccbf"/>
+      <text id="label-7" data-name="label" transform="translate(10 30)" fill="#101010" font-size="14" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="10">Tracking for officers </tspan><tspan x="0" y="30">first on scene. (Non </tspan><tspan x="0" y="50">verbal)</tspan></text>
+      <rect id="sticker-3" data-name="sticker" width="160" height="20" opacity="0.35" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+    <g id="Post-It_Element-4" data-name="Post-It Element" transform="translate(963 232)">
+      <rect id="background_color_fill_4" data-name="background [color_fill]" width="160" height="120" fill="#26ccbf"/>
+      <text id="label-8" data-name="label" transform="translate(10 30)" fill="#101010" font-size="14" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="10">Visual of available </tspan><tspan x="0" y="30">officers on duty</tspan></text>
+      <rect id="sticker-4" data-name="sticker" width="160" height="20" opacity="0.35" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+    <g id="Post-It_Element-5" data-name="Post-It Element" transform="translate(1202 314)">
+      <rect id="background_color_fill_5" data-name="background [color_fill]" width="160" height="120" fill="#26ccbf"/>
+      <text id="label-9" data-name="label" transform="translate(10 30)" fill="#101010" font-size="14" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="10">Voice command to </tspan><tspan x="0" y="30">send message. </tspan><tspan x="0" y="50">(Hands Free)</tspan></text>
+      <rect id="sticker-5" data-name="sticker" width="160" height="20" opacity="0.35" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+    <g id="Post-It_Element-6" data-name="Post-It Element" transform="translate(710 213)">
+      <rect id="background_color_fill_6" data-name="background [color_fill]" width="160" height="120" fill="#cae038"/>
+      <text id="label-10" data-name="label" transform="translate(10 30)" fill="#101010" font-size="14" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="10">Preload Workflows</tspan><tspan x="0" y="30">For Planned and</tspan><tspan x="0" y="50">Unplanned</tspan></text>
+      <rect id="sticker-6" data-name="sticker" width="160" height="20" opacity="0.35" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+    <g id="Post-It_Element-7" data-name="Post-It Element" transform="translate(764 623)">
+      <rect id="background_color_fill_7" data-name="background [color_fill]" width="160" height="120" fill="#cae038"/>
+      <text id="label-11" data-name="label" transform="translate(10 30)" fill="#101010" font-size="14" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="10">Minimize required </tspan><tspan x="0" y="30">input for workflows</tspan></text>
+      <rect id="sticker-7" data-name="sticker" width="160" height="20" opacity="0.35" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+    <g id="Post-It_Element-8" data-name="Post-It Element" transform="translate(620 363)">
+      <rect id="background_color_fill_8" data-name="background [color_fill]" width="160" height="140" fill="#cae038"/>
+      <text id="label-12" data-name="label" transform="translate(10 30)" fill="#101010" font-size="14" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="10">Unplanned - audible </tspan><tspan x="0" y="30">cues to start a new </tspan><tspan x="0" y="50">workflow (False neg </tspan><tspan x="0" y="70">is more costly than a </tspan><tspan x="0" y="90">False positive</tspan></text>
+      <rect id="sticker-8" data-name="sticker" width="160" height="20" opacity="0.35" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+    <g id="Post-It_Element-9" data-name="Post-It Element" transform="translate(556 628)">
+      <rect id="background_color_fill_9" data-name="background [color_fill]" width="160" height="120" fill="#cae038"/>
+      <text id="label-13" data-name="label" transform="translate(10 30)" fill="#101010" font-size="14" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="10">False neg is more </tspan><tspan x="0" y="30">costly than a False </tspan><tspan x="0" y="50">positive</tspan></text>
+      <rect id="sticker-9" data-name="sticker" width="160" height="20" opacity="0.35" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+    <g id="Post-It_Element-10" data-name="Post-It Element" transform="translate(1145 183)">
+      <rect id="background_color_fill_10" data-name="background [color_fill]" width="160" height="120" fill="#cae038"/>
+      <text id="label-14" data-name="label" transform="translate(10 30)" fill="#101010" font-size="14" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="10">Work no matter if </tspan><tspan x="0" y="30">satellite, wifi (Offline)</tspan></text>
+      <rect id="sticker-10" data-name="sticker" width="160" height="20" opacity="0.35" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+    <g id="Post-It_Element-11" data-name="Post-It Element" transform="translate(418 406)">
+      <rect id="background_color_fill_11" data-name="background [color_fill]" width="160" height="120" fill="#7ee1ff"/>
+      <text id="label-15" data-name="label" transform="translate(10 30)" fill="#101010" font-size="14" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="10">Easy to understand </tspan><tspan x="0" y="30">icons for maps. </tspan></text>
+      <rect id="sticker-11" data-name="sticker" width="160" height="20" opacity="0.35" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+    <g id="Post-It_Element-12" data-name="Post-It Element" transform="translate(1510 503)">
+      <rect id="background_color_fill_12" data-name="background [color_fill]" width="160" height="120" fill="#7ee1ff"/>
+      <text id="label-16" data-name="label" transform="translate(10 30)" fill="#101010" font-size="14" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="10">Drone to go in a map </tspan><tspan x="0" y="30">the building/floor</tspan></text>
+      <rect id="sticker-12" data-name="sticker" width="160" height="20" opacity="0.35" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+    <g id="Post-It_Element-13" data-name="Post-It Element" transform="translate(900 374)">
+      <rect id="background_color_fill_13" data-name="background [color_fill]" width="160" height="120" fill="#7ee1ff"/>
+      <text id="label-17" data-name="label" transform="translate(10 30)" fill="#101010" font-size="14" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="10">Geo fence - funnel </tspan><tspan x="0" y="30">info through one </tspan></text>
+      <rect id="sticker-13" data-name="sticker" width="160" height="20" opacity="0.35" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+    <text id="Key_takeaways:_-_Available_Active_officers_visual_for_easier_assignment_-_Preloaded_workflows_for_Planned_and_Unplanned_events_-_Audible_cues_to_start_a_new_workflow_-_Merge_workflows_addition_to_Fire_and_EMS_-_Map_information_location_perimeter_police" data-name="Key takeaways:
+- Available/Active officers visual for easier assignment
+- Preloaded workflows for Planned and Unplanned events
+- Audible cues to start a new workflow
+- Merge workflows (addition to Fire and EMS)
+- Map information (location perimeter, police" transform="translate(156 993)" fill="#030303" font-size="20" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="19">Key takeaways:</tspan><tspan x="0" y="57">- Available/Active officers visual for easier assignment</tspan><tspan x="0" y="95">- Preloaded workflows for Planned and Unplanned events</tspan><tspan x="0" y="133">- Audible cues to start a new workflow</tspan><tspan x="0" y="171">- Merge workflows (addition to Fire and EMS)</tspan><tspan x="0" y="209">- Map information (location perimeter, police, fire, EMS) all easy to identify</tspan><tspan x="0" y="247">- Work offline (satellite, wifi)</tspan></text>
+    <g id="Post-It_Element-14" data-name="Post-It Element" transform="translate(725 474)">
+      <rect id="background_color_fill_14" data-name="background [color_fill]" width="160" height="120" fill="#cae038"/>
+      <text id="label-18" data-name="label" transform="translate(10 30)" fill="#101010" font-size="14" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="10">Start workflow </tspan><tspan x="0" y="30">without having to use </tspan><tspan x="0" y="50">the app</tspan></text>
+      <rect id="sticker-14" data-name="sticker" width="160" height="20" opacity="0.35" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+    <g id="Post-It_Element-15" data-name="Post-It Element" transform="translate(955 466)">
+      <rect id="background_color_fill_15" data-name="background [color_fill]" width="160" height="120" fill="#cae038"/>
+      <text id="label-19" data-name="label" transform="translate(10 30)" fill="#101010" font-size="14" font-family="AcuminPro-Bold, Acumin Pro" font-weight="700"><tspan x="0" y="10">Map data for location </tspan><tspan x="0" y="30">information.</tspan><tspan x="0" y="50">Fire and EMS</tspan></text>
+      <rect id="sticker-15" data-name="sticker" width="160" height="20" opacity="0.35" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+  </g>
+</svg>

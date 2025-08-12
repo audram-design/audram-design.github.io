@@ -9,34 +9,286 @@
 }
 
 .alt-section {
-  background-color: #f6f6f6;
+  background-color: #e0d2d8;
 }
+
+.body {
+  background-color: #F5F5F5;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(28, 28, 28, 0.9); /* keep for all views */
+  position: relative;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(28, 28, 28, 0.9);
+  z-index: 2;
+  align-items: center;
+}
+
+
+.logo img {
+  height: 32px;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  font-size: 16px;
+  color:#FCF1FC;
+  text-decoration: none;
+  transition: color 0.3s ease; /* smooth transition */
+}
+
+.nav-links a:hover {
+  font-weight: 100 ;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  color:#f35cb4;
+  
+
+}
+
+/* Default nav styles */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(../images/hero-sunset.svg); /* path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-about {
+  height: 100vh;
+  background-image: url(../images/about/about-bike.png); /* path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-experience {
+  height: 100vh;
+  background-image: url(../images/experience-sun.png); /* path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-squire {
+  height: 100vh;
+  background-image: url(../images/Squire/milhero.png); /* path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-fetch {
+  height: 100vh;
+  background-image: url(../images/Fetch/hero_fetchus.png); /* path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items:self-end;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  justify-content: left;
+  text-align: left;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.section-hero {
+  height: 70vh;
+  background-image: url(../images/Squire/squire_alldevices.svg); /* path to your image */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #F5F5F5;
+}
+
 header {
   text-align: center;
   width: 100%;
   margin: auto;
 }
 
+/* Featured Work */
+.section-title {
+  padding: 60px 40px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.sub-section {
+  padding: 60px 40px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.section-title h4 {
+  color: #6D1449;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.sub-section h4 {
+  color: #6D1449;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color:  #F5F5F5;
+}
+
+.hero-about h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color:  #f35cb4;
+}
+
+.hero-squire h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color:  #f5f5f5;
+}
+
+.hero-experience h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color:  #f5f5f5;
+}
+
+.hero-fetch h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color:  #f5f5f5;
+}
+
+.connect h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color:  #F5F5F5;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color:  #1F1F1F;
+}
+
 h2 {
   font-size: 30px;
   font-weight: bold;
-  color:  #4d4d4d;
+  color:  #1F1F1F;
 }
 
 h3 {
   font-size: 25px;
   font-weight: bold;
-  color: #4d4d4d;
+  color: #1F1F1F;
+}
+
+.hero-about h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #f5f5f5;
 }
 
 h4 {
   font-size: 20px;
   font-weight: bold;
-  color: #4d4d4d;
+  color: #1F1F1F;
+}
+
+h6{
+  font-size: 14px;
+  font-weight:lighter;
+  color: #6D1449;
+}
+
+.hero p {
+  font-size: 18px;
+  color:  #F5F5F5;
+}
+
+.hero-about p {
+  font-size: 18px;
+  color:  #F5F5F5;
+}
+
+.hero-squire p {
+  font-size: 18px;
+  color:  #F5F5F5;
+}
+
+.hero-experience p {
+  font-size: 18px;
+  color:  #F5F5F5;
+}
+
+.hero-fetch p {
+  font-size: 18px;
+  color:  #F5F5F5;
+}
+
+p {
+  font-size: 18px;
+  color:  #3D3D3D;
 }
 
 #links {
   display:block;
+}
+.overall {
+  background-color: #f7f7f7;
 }
 
 .bodyText {
@@ -51,6 +303,7 @@ h4 {
   line-height: 1.23;
   text-align: left;
   color: #4d4d4d;
+  background-color: #f7f7f7;
 }
 
 .basicText {
@@ -70,17 +323,52 @@ h4 {
 .btn-outline-primary{
   margin-top: 30px;
   color:#E01889;
+  background-color: #E01889;
   border-color: #E01889;
+  color:#ffffff;
 }
 
 .btn-outline-primary:hover{
-  background-color: #E01889;
-  border-color:#E01889;
+  background-color: #650A34;
+  border-color: #650A34;
   color:#ffffff;
+}
+
+.btn-primary{
+  margin-top: 10px;
+  background-color: #E01889;
+  border-color: #E01889;
+  color:#ffffff;
+}
+
+.btn-primary:hover{
+  background-color: #CD348B;
+  border-color: #CD348B;
+  color:#ffffff;
+}
+
+.btn-inactive{
+  margin-top: 10px;
+  background-color: #e0d2d8;
+  border-color: #e0d2d8;
+  color:#E01889;
+}
+.btn-inactive:hover{
+  margin-top: 10px;
+  background-color: #e0d2d8;
+  border-color: #e0d2d8;
+  color:#E01889;
+}
+.animated-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 40px;
+  gap: 40px;
 }
 
 #cards{
   text-align: center;  
+  background-color: #f5f5f5;
   display: grid;
   justify-content: center;
   grid-template-rows: auto ;
@@ -94,6 +382,7 @@ h4 {
 #fetch-cards{
   text-align: center;  
   display: grid;
+  background-color: #f5f5f5;
   justify-content: center;
   grid-template-rows: auto ;
   grid-row-gap: 100px;
@@ -118,7 +407,9 @@ h4 {
   border-color: none;
   border-style: none;
   width: 800px;
+  background-color: #f5f5f5;
 }
+
 
 .card img {
   width: 400px;
@@ -158,25 +449,43 @@ h4 {
   list-style-type: none;
 }
 
+.rounded-img {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.connect {
+  height: 600px;
+  background-image: url(../images/photos/hex-bg-black.jpeg); /* path to your image */
+  background-color: #1e1e1e;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 #footer {
   display: inline-block;
   text-align: center;
   width: 100%;
-  color: #4A4A4A;
-  background-color:#FCF1FC;
-  padding-top:50px;
-  margin-top:50px;
-
+  height: 200px;
+  color: #F5F5F5;
+  background-color: #1e1e1e;
+  padding-top:0px;
 }
-
+/* Featured Work 
 .footerMenu {
   float: left;
   padding-left: 100px;
-  padding-top: 20px;
+  padding-top: 10px;
   justify-content: start;
   padding-left: 100px;
   width: 50px;
-  height: 15px;
+  height: 5px;
   margin: 32px 32px 32px 0;
   font-size: 15px;
   font-weight: normal;
@@ -185,31 +494,31 @@ h4 {
   line-height: 1.23;
   letter-spacing: normal;
   text-align: left;
-  color: #4A4A4A;
+  color: #FCF1FC;
 }
 
 .contact {
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.23;
   letter-spacing: normal;
   text-align: center;
-  color:#4d4d4d;
+  color:#FCF1FC;
 }
 
 .email {
-  font-size: 15px;
+  font-size: px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.23;
   letter-spacing: normal;
   text-align: center;
-  color: #4d4d4d;
+  color: #FCF1FC;
 }
 
 .email:hover{
@@ -217,33 +526,39 @@ h4 {
 }
 
 .phone{
-  font-size: 15px;
+  font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.23;
   letter-spacing: normal;
   text-align: center;
-  color: #4d4d4d;
+  color: #FCF1FC;
 }
+*/
 
 .copyRight{
   text-align: center;
-  padding: 20px;
-  padding-top: 80px;
-  vertical-align: bottom;
-  font-size: 15px;
+  padding: 10px;
+  padding-top: 10px;
+  vertical-align: top;
+  font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
   letter-spacing: normal;
-  color: #4A4A4A;
+  color: #D1BEC6;
 }
 
 .linkedin{
   width: 200px;
-  height: px;
+
+}
+
+.instagram{
+  width: 200px;
+
 }
 
 @media all and (min-width: 600px) {
@@ -261,83 +576,78 @@ h4 {
     align-content: center;
     margin-top: 100px;
   }
-
-  .topnav a {
-    display: inline-block;
-    font-size: 20px;
-    padding: 20px;
-    text-decoration: none;
-    color: #707070;
-
-  }
-  .topnav a:hover {
-    text-decoration: underline;
-    text-decoration-color:#ec0b8c;
-  }
-
-  .topnav {
-    /* display: inline-block; */
-    vertical-align: text-top;
-    padding: 1%;
-    font-size: 30px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.23;
-    letter-spacing: normal;
-    text-align: center;
-    color: #707070;
+  .navbar {
+    background-color: rgba(28, 28, 28, 0.9); /* keep for all views */
+    position: relative;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(28, 28, 28, 0.9);
+    z-index: 2;
+    align-items: center;
   }
   
-  .topnav {
-    display: inline-block;
+  
+  .logo img {
+    height: 32px;
+  }
+  
+  .nav-links a {
+    margin-left: 30px;
+    font-size: 16px;
+    color:#FCF1FC;
+    text-decoration: none;
+    transition: color 0.3s ease; /* smooth transition */
+  }
+  
+  .nav-links a:hover {
+    font-weight: 100 ;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    color:#f35cb4;
   }
 
 }
 
-@media only screen and (max-width: 600px) { 
-
-  .amLogo{
-    width: 70%;
-  }
-
-  /* #hamburger {
-    display: inline-block;
-  } */
-
-  .topnav {
-    overflow: hidden;
-    position: relative;
-  }
-
-  .topnav #links {
+/* Mobile styles */
+@media only screen and (max-width: 600px){
+  .nav-links {
     display: none;
+    flex-direction: column;
+    background-color: rgba(28, 28, 28, 0.9); /* match web version */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 1;
   }
 
-  .topnav a{
-    color: #707070;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
+  .nav-links.show {
+    display: flex;
   }
 
-  .topnav a.icon {
-    background: white;
+  .icon {
     display: block;
     position: absolute;
-    right: 0;
-    top: 0;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #f35cb4;
   }
 
-  .topnav a:hover {
-    background-color: #FCF1FC;
-    color: #707070;
+  .icon:hover {
+    color: #CD348B; /* or any other color you'd like */
   }
 
-  .active {
-    background-color: #FCF1FC;
-    color: white;
+  .navbar {
+    position: relative;
+    background-color: rgba(28, 28, 28, 0.9);
   }
 
   .cardBodyText{
