@@ -347,6 +347,18 @@ p {
   color:#ffffff;
 }
 
+.btn-inactive{
+  margin-top: 10px;
+  background-color: #e0d2d8;
+  border-color: #e0d2d8;
+  color:#E01889;
+}
+.btn-inactive:hover{
+  margin-top: 10px;
+  background-color: #e0d2d8;
+  border-color: #e0d2d8;
+  color:#E01889;
+}
 .animated-section {
   display: flex;
   justify-content: space-between;
@@ -435,6 +447,11 @@ p {
 
 .bullets{
   list-style-type: none;
+}
+
+.rounded-img {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .connect {
@@ -535,6 +552,11 @@ p {
 }
 
 .linkedin{
+  width: 200px;
+
+}
+
+.instagram{
   width: 200px;
 
 }
