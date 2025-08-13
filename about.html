@@ -24,14 +24,16 @@
        
     </head>
     <body  onresize="resized()">
+         
         <header class="navbar">
+         
             <div class="logo">
               <img src="images/am-logo_2021-01-04/logo-am.svg" alt="AM Logo" />
             </div>
           
-            <!-- Hamburger icon -->
+              <!-- Hamburger icon -->
 
-            <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
+             <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
                 <i id="menu-icon" class="fa fa-bars"></i>
             </a>
           
@@ -42,6 +44,7 @@
               <a href="experience.html">Experience</a>
               <a href="#contact">Contact</a>
             </nav>
+            
           </header>
 
       <section class="hero-about">
@@ -159,5 +162,13 @@
             </div>
  
         </footer>
+        <!--Call for nav hamburger menu-->
+        <script>
+             function toggleMenu() {
+             const nav = document.getElementById("navMenu");
+            nav.classList.toggle("show");
+            }
+        </script>
+
     </body>
 </html>
