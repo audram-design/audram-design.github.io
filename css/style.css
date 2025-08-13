@@ -62,7 +62,7 @@
 
 .hero {
   height: 100vh;
-  background-image: url(../images/hero-sunset2.jpg); /* path to your image */
+  background-image: url(../images/hero-sunset.jpg); /* path to your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
