@@ -25,12 +25,44 @@
     </head>
     <body  onresize="resized()">
         <header>
-            <div class="topnav">
-                <img src="images/am-logo_2021-01-04/logo-am.svg"  alt="Audra Miller Logo"  class="amLogo" />
-            </div>
             <!--/div-->
               <!-- Automatically redirect after 5 seconds -->
-                 <meta http-equiv="refresh" content=".5;url=resume.html">
+              <meta http-equiv="refresh" content=".5;url=resume.html">
+
+            <div class="logo">
+                <img src="images/am-logo_2021-01-04/logo-am.svg" alt="AM Logo" />
+              </div>
+            
+              <!-- Hamburger icon -->
+  
+              <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
+                  <i id="menu-icon" class="fa fa-bars"></i>
+              </a>
+            
+              <!-- Nav links container -->
+              <nav class="nav-links" id="navMenu">
+                <a href="index.html">Featured Work</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="#contact">Contact</a>
+              </nav>
+            </header>
+  
+        <section class="hero-experience">
+          <div class="overlay">
+            <h1>Designer of Experiences. </h1>
+            <p>Driven by user insight and design precision, I craft intuitive interfaces that align with
+              business goals and technical constraints. </p>
+              <a href="images/AudraMiller-ProductResume.pdf">
+                  <button type="button" class="btn btn-primary"   onclick="document.location='images/Audra-Miller-Resume.pdf'">View Resume</button>
+              </a>
+              </div>
+        </section>
+  
+        <section class="sub-section">
+          <h4>Don't Just Take My Word for It</h4> 
+        </section>
+            
         </header>
 
         <section class="bodyText">
