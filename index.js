@@ -35,3 +35,30 @@ function toggleMenu(){
     }
   }
    */
+
+  document.querySelectorAll('.track-btn').forEach(button => {
+    button.addEventListener('click', function () {
+      gtag('event', 'cta_click', {
+        button_name: this.dataset.name,
+        location: this.dataset.location
+      });
+    });
+  });
+
+
+  gtag('event', 'cta_click', {
+    button_name: 'Brett Letter',
+    location: 'hero-experience'
+  });
+
+  gtag('event', 'cta_click', {
+    button_name: 'Jay Letter',
+    location: 'hero-experience'
+  });
+
+  gtag('event', 'cta_click', {
+    button_name: 'View On Squire Website',
+    location: 'squire'
+  });
+
+  
