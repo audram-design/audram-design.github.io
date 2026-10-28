@@ -1,307 +1,384 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Audra Miller Portfolio</title>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id= G-WG19FL1DFV"></script>
-        <script>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Squire Solutions — Audra Miller Portfolio</title>
+<meta name="description" content="Case study: designing real-time command and control tools for military and public safety teams at Squire Solutions.">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon16-9.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id= G-WG19FL1DFV"></script>
+            <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('config', 'G-6RYZPYPV0L');
-        </script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="index.js"></script>
+            </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:var(--brand)}a:hover{color:var(--brand-hover)}
+*{box-sizing:border-box}
+#top{--bg-a:#F5F5F5;--bg-b:#FFFFFF;--bg-c:#E0D2D8;--line:#E0D2D8;--ink:#1F1F1F;--body:#3D3D3D;--brand:#6D1449;--brand-hover:#4A0D31;--chip:#FCF1FC;--btn:#6D1449;--btn-ink:#FFFFFF;--btn-hover:#4A0D31;--matte-a:#F5F5F5;--matte-b:#FFFFFF;color-scheme:light}
+#top[data-theme="dark"]{--bg-a:#1C1C1C;--bg-b:#262626;--bg-c:#2E1A26;--line:#5A4750;--ink:#F5F5F5;--body:#DDD5D9;--brand:#F9A8D8;--brand-hover:#FCF1FC;--chip:#3D1B31;--btn:#F9A8D8;--btn-ink:#1C1C1C;--btn-hover:#FCF1FC;--matte-a:#EDE6EA;--matte-b:#EDE6EA;color-scheme:dark}
+a:focus-visible,button:focus-visible{outline:3px solid #1C1C1C;outline-offset:3px;box-shadow:0 0 0 6px #FCF1FC;border-radius:4px}
+.skip{position:absolute;left:16px;top:-80px;z-index:10}
+.skip:focus{top:12px}
+.hero{background-image:url(images/site/squire-hero.jpg);background-size:cover;background-position:center}
+.contact{background-image:url(images/site/hex-bg-black.jpg);background-size:cover;background-position:center}
+.navlink:hover{color:#F9A8D8 !important;text-decoration:underline !important;text-underline-offset:8px}
+.navlink[aria-current="page"]{text-decoration:underline !important;text-underline-offset:8px}
+.btn-plum:hover{background:var(--btn-hover) !important}
+.btn-pink:hover{background:#FCF1FC !important}
+.btn-ghost:hover{background:#FCF1FC !important;color:#1C1C1C !important}
+abbr{text-decoration:underline dotted;text-underline-offset:4px;cursor:help}
+.textlink{text-decoration-thickness:2px;text-underline-offset:5px}
+.textlink:hover{text-decoration-thickness:4px}
+.bar{transform-origin:left}
+.rule{transform-origin:left}
+@media (prefers-reduced-motion: no-preference){
+  @keyframes rise{from{opacity:0;translate:0 18px}to{opacity:1;translate:0 0}}
+  @keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  [data-motion="on"] .load{animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+  [data-motion="on"] .d1{animation-delay:.1s}
+  [data-motion="on"] .d2{animation-delay:.2s}
+  [data-motion="on"] .d3{animation-delay:.3s}
+  [data-motion="on"] .rule{animation:draw .7s .35s cubic-bezier(.2,.7,.2,1) both}
+  [data-motion="on"] .navlink{transition:color .3s ease}
+  [data-motion="on"] .btn{transition:background-color .2s ease-out,color .2s ease-out}
+  [data-motion="on"] .btn .arrow{transition:transform .2s ease-out}
+  [data-motion="on"] .btn:hover .arrow,[data-motion="on"] .btn:focus-visible .arrow{transform:translateX(5px)}
+  [data-motion="on"] .textlink{transition:text-decoration-thickness .15s ease-out}
+  [data-motion="on"] .shot img{transition:transform .3s cubic-bezier(.2,.7,.2,1)}
+  [data-motion="on"] .shot:hover img{transform:translateY(-8px)}
+  [data-motion="on"] .tile{transition:transform .2s ease-out,border-color .2s ease-out}
+  [data-motion="on"] .tile:hover{transform:translateY(-4px);border-color:var(--brand)}
+  @supports (animation-timeline: view()){
+    [data-motion="on"] .reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 90%}
+    [data-motion="on"] .bar{animation:draw linear both;animation-timeline:view();animation-range:entry 30% cover 30%}
+  }
+}
+</style>
+</head>
+<body>
+<div id="top" data-motion="on" style="position: relative; --accent: #E01889; font-family: Montserrat, 'Avenir Next', 'Segoe UI', sans-serif; color: var(--body); background: #1C1C1C; font-size: 18px; line-height: 1.6">
 
-        <!-- font awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-       
-    </head>
-    <body  onresize="resized()" class="body">
-        <header class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                   <img src="images/am-logo_2021-01-04/logo-am.svg" alt="AM Logo" />
-                </a>
-            </div>
-          
-            <!-- Hamburger icon -->
+<a class="skip btn btn-pink" href="#main" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px; background: #F9A8D8; color: #1C1C1C; font-weight: 700; text-decoration: none; border-radius: 4px">Skip to main content</a>
 
-            <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
-                <i id="menu-icon" class="fa fa-bars"></i>
-            </a>
-          
-            <!-- Nav links container -->
-            <nav class="nav-links" id="navMenu">
-              <a href="index.html">Featured Work</a>
-              <a href="about.html">About</a>
-              <a href="experience.html">Experience</a>
-              <a href="#contact">Contact</a>
-            </nav>
-          </header>
+<header style="position: absolute; top: 0; left: 0; right: 0; z-index: 2; background: rgba(28, 28, 28, 0.9); padding: 12px clamp(16px, 3vw, 40px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px">
+<a href="index.html" aria-label="Audra Miller, home" style="display: inline-flex; align-items: center; min-height: 48px; min-width: 48px">
+<svg aria-hidden="true" viewBox="0 0 189.71 108.5" style="height: 32px; width: 56px; display: block">
+<polygon fill="#982068" points="167.76 108.5 189.71 108.5 154.42 0 132.25 0 167.76 108.5"></polygon>
+<polygon fill="#cd348b" points="105.86 108.5 83.91 108.5 132.3 0 154.48 0 105.86 108.5"></polygon>
+<polyline fill="#650a34" points="143.02 32.59 141.64 28.54 154.42 0"></polyline>
+<polygon fill="#ee3c96" points="83.91 108.5 105.86 108.5 70.57 0 48.39 0 83.91 108.5"></polygon>
+<polygon fill="#ee3c96" points="21.95 108.5 5.77 108.5 43.65 73.37 68.5 65.8 21.95 108.5"></polygon>
+<polygon fill="#f175ad" points="21.95 108.5 0 108.5 48.39 0 70.57 0 21.95 108.5"></polygon>
+<polyline fill="#982068" points="59.16 32.59 57.78 28.54 70.57 0"></polyline>
+<polyline fill="#982068" points="26.39 104.38 21.95 108.5 33.68 82.31"></polyline>
+<polyline fill="#982068" points="107.3 105.27 105.86 108.5 96.6 80.04"></polyline>
+</svg>
+</a>
+<nav aria-label="Primary" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 14px">
+<a class="navlink" href="index.html" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 8px; color: #FCF1FC; font-size: 16px; text-decoration: none">Featured Work</a>
+<a class="navlink" href="about.html" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 8px; color: #FCF1FC; font-size: 16px; text-decoration: none">About</a>
+<a class="navlink" href="experience.html" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 8px; color: #FCF1FC; font-size: 16px; text-decoration: none">Experience</a>
+<a class="navlink" href="#contact" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 8px; color: #FCF1FC; font-size: 16px; text-decoration: none">Contact</a>
+</nav>
+</header>
 
-          <section class="hero-squire">
-            <div class="overlay">
-                <h1>Built for Clarity. <br> Designed for the Mission.</h1>
-              <p> Crafting intuitive, high-stakes interfaces for military and public safety users where every second counts and
-                every detail matters.</p>
-            </div>
-          </section>
+<main id="main">
 
-      <section class="sub-section">
-        <h4>Bridging strategy, design, and delivery to build trusted systems that perform under pressure.</h4> 
-      </section>
+<section class="hero" aria-labelledby="hero-title" style="background-color: #1C1C1C; min-height: 600px; display: flex; align-items: flex-end; padding: 120px clamp(16px, 4vw, 40px) clamp(24px, 5vw, 72px)">
+<div style="width: 100%; max-width: 1200px; margin: 0 auto">
+<div style="max-width: 760px; background: #1C1C1C; padding: clamp(28px, 4vw, 56px); display: flex; flex-direction: column; gap: 20px; align-items: flex-start">
+<p class="load" style="margin: 0; font-size: 16px; font-weight: 500; letter-spacing: 0.08em; color: #F9A8D8">// CASE STUDY   // SQUIRE SOLUTIONS</p>
+<h1 id="hero-title" class="load d1" style="margin: 0; font-size: clamp(34px, 4.4vw, 56px); line-height: 1.15; font-weight: 700; color: #F5F5F5; text-wrap: balance">Built for Clarity. Designed for the Mission.</h1>
+<div class="rule" aria-hidden="true" style="width: 120px; height: 6px; background: var(--accent)"></div>
+<p class="load d2" style="margin: 0; max-width: 34em; color: #F5F5F5">Crafting intuitive, high-stakes interfaces for military and public safety users where every second counts and every detail matters.</p>
+</div>
+</div>
+</section>
 
+<section aria-labelledby="role-title" style="background: var(--bg-b); padding: clamp(56px, 7vw, 96px) clamp(16px, 4vw, 40px)">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+<div class="reveal" style="display: flex; flex-direction: column; gap: 12px; max-width: 42em">
+<p style="margin: 0; font-size: 16px; font-weight: 700; letter-spacing: 0.08em; color: var(--brand)">// MY ROLE</p>
+<h2 id="role-title" style="margin: 0; font-size: clamp(30px, 3.2vw, 40px); line-height: 1.2; font-weight: 700; color: var(--ink)">Bridging strategy, design, and delivery to build trusted systems that perform under pressure.</h2>
+</div>
+<div class="shot reveal" style="background: var(--matte-b); border-radius: 8px; padding: clamp(16px, 3vw, 40px); max-width: 900px; width: 100%; margin: 0 auto">
+<img src="images/site/squire-alldevices.jpg" alt="Squire software showing a live aerial map with unit markers on a desktop monitor, a tablet and two phones." style="display: block; width: 100%; height: auto">
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 24px">
 
-        <!-- Squire Solutions -->
-        <!-- Product Design and Product Management -->
-        <section id="product-design-wrapper" style="text-align: center;">
+<div class="tile reveal" style="background: var(--bg-a); border: 2px solid var(--line); border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div class="bar" aria-hidden="true" style="height: 6px; width: 64px; background: var(--accent)"></div>
+<h3 style="margin: 0; font-size: 20px; line-height: 1.3; font-weight: 700; color: var(--ink)"><abbr title="user experience">UX</abbr> &amp; Product Design</h3>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 17px">
+<li>Visual Design &amp; High-Fidelity Prototyping</li>
+<li>Interaction Design &amp; Detail Workflows</li>
+<li>Design Systems &amp; <abbr title="user interface">UI</abbr> Consistency</li>
+<li>Information Architecture &amp; Content Structure</li>
+<li>Persona Creation &amp; Story Mapping</li>
+<li>End-to-End Product Experience</li>
+</ul>
+</div>
 
-            <section class="section-hero"></section>
+<div class="tile reveal" style="background: var(--bg-a); border: 2px solid var(--line); border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div class="bar" aria-hidden="true" style="height: 6px; width: 64px; background: var(--accent)"></div>
+<h3 style="margin: 0; font-size: 20px; line-height: 1.3; font-weight: 700; color: var(--ink)">Cross-Functional Execution</h3>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 17px">
+<li>Coordinating with Engineering &amp; Product Teams</li>
+<li>Handing off Robust Development Specs</li>
+<li>Iterating Rapidly and Shipping Efficiently</li>
+<li>Maintaining Communication &amp; Alignment Across Teams</li>
+</ul>
+</div>
 
-            <div class="card">
-                <div class="right-column-image">
-                    <br/><br/>
-                    <!-- <img src="images/Squire/contact_device_mock_blk.png" alt="Image of desktop version of the homepage with two mobile examples of the product pages" /> -->
-                    <h4>UX & Product Design</h4>
-                    <ul class="cardBodyText" style="text-decoration: none; list-style:circle;">
-                        <li>Visual Design & High-Fidelity Prototyping</li>
-                        <li>Interaction Design & Detail Workflows</li>
-                        <li>Design Systems & UI Consistency</li>
-                        <li>Information Architecture & Content Structure</li>
-                        <li>Persona Creation & Story Mapping</li>
-                        <li>End-to-End Product Experience</li>
-                    </ul>
-                    <br/><br/>
-                    <h4>Cross-Functional Execution</h4>
-                    <ul class="cardBodyText" style="text-decoration: none; list-style:circle;">
-                        <li>Coordinating with Engineering & Product Teams</li>
-                        <li>Handing off Robust Development Specs</li>
-                        <li>Iterating Rapidly and Shipping Efficiently</li>
-                        <li>Maintaining Communication & Alignment Across Teams</li>
-                    </ul>
+<div class="tile reveal" style="background: var(--bg-a); border: 2px solid var(--line); border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div class="bar" aria-hidden="true" style="height: 6px; width: 64px; background: var(--accent)"></div>
+<h3 style="margin: 0; font-size: 20px; line-height: 1.3; font-weight: 700; color: var(--ink)">Strategy &amp; Leadership</h3>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 17px">
+<li>Strategy &amp; Mission Alignment</li>
+<li>Problem Definition (Why / What)</li>
+<li>Prioritization &amp; Resource Planning</li>
+<li>Project Management &amp; Deadline Ownership</li>
+<li>Driving Coordination &amp; Execution</li>
+<li>Advocacy: User &amp; Business</li>
+<li>Team Alignment &amp; Gap Coverage</li>
+</ul>
+</div>
 
-                    <br/>
-                </div>
-                <div class="right-column-text">
-                    <br/><br />
-                    <h4>Strategy & Leadership</h4>
-                    <ol class="cardBodyText" style="text-decoration: none; list-style:circle;">
-                        <li>Strategy & Mission Alignment</li>
-                        <li>Problem Definition (Why / What)</li>
-                        <li>Prioritization & Resource Planning</li>
-                        <li>Project Management & Deadline Ownership</li>
-                        <li>Driving Coordination & Execution</li>
-                        <li>Advocacy: User & Business</li>
-                        <li>Team Alignment & Gap Coverage</li>
-                    </ol>
+<div class="tile reveal" style="background: var(--bg-a); border: 2px solid var(--line); border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div class="bar" aria-hidden="true" style="height: 6px; width: 64px; background: var(--accent)"></div>
+<h3 style="margin: 0; font-size: 20px; line-height: 1.3; font-weight: 700; color: var(--ink)">Research &amp; Usability</h3>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 17px">
+<li>User Research &amp; Problem Discovery</li>
+<li>Usability Testing &amp; Iteration</li>
+<li>Solution Framing: Problem &gt; How &gt; Outcome</li>
+</ul>
+</div>
 
-                    <br/>
-                    <h4>Research & Usability</h4>
-                    <ul class="cardBodyText" style="text-decoration: none; list-style:circle;">
-                        <li>User Research & Problem Discovery</li>
-                        <li>Usability Testing & Iteration</li>
-                        <li>Solution Framing: <br>Problem > How > Outcome</li>
-                    </ul>
+</div>
+</div>
+</section>
 
-                </div>
+<section aria-labelledby="as-title" style="background: var(--bg-a); padding: clamp(56px, 7vw, 96px) clamp(16px, 4vw, 40px)">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+<div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: clamp(28px, 5vw, 72px); align-items: center">
+<div class="shot" style="background: var(--matte-b); border-radius: 8px; padding: clamp(16px, 3vw, 40px)">
+<img src="images/site/squire-as-nofly.png" alt="Squire Active Shooter module on a desktop monitor, showing an aerial map with a red no-fly perimeter drawn around an incident." style="display: block; width: 100%; height: auto">
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start">
+<p style="margin: 0; font-size: 16px; font-weight: 700; letter-spacing: 0.08em; color: var(--brand)">// MODULE 01</p>
+<h2 id="as-title" style="margin: 0; font-size: clamp(28px, 3vw, 36px); line-height: 1.2; font-weight: 700; color: var(--ink)">Active Shooter Workflow Application</h2>
+<p style="margin: 0; font-size: 22px; line-height: 1.4; font-weight: 500; color: var(--brand)">Coordinated response in seconds, not minutes.</p>
+<div style="display: flex; flex-direction: column; gap: 2.4em; max-width: 34em">
+<p style="margin: 0">Squire's Active Shooter Module gives real-time visibility to law enforcement during critical incidents. Teams can track shooter movement, unit positions, and manage response workflows directly in the field.</p>
+<p style="margin: 0">With live mapping, perimeter tools, and integrated command features, responders minimize radio traffic, improve coordination across agencies, and save critical minutes when it matters most.</p>
+</div>
+<a class="btn btn-plum" aria-label="Active Shooter on Squire's website (opens in a new tab)" href="https://www.squiresolutions.com/product/active-shooter/" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; margin-top: 8px; padding: 0 24px; background: var(--btn); color: var(--btn-ink); font-weight: 700; text-decoration: none; border-radius: 4px" target="_blank" rel="noopener">Active Shooter on Squire's website <span class="arrow" aria-hidden="true" style="display: inline-block">→</span></a>
+</div>
+</div>
 
-        
-            </div>
-            <br/>
-        </section>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr)); gap: 20px">
 
-        <!-- Active Shooter Module -->
-        <section id="active-shooter-wrapper" style="text-align: center;" >
-            <br/><br/>
-            <div class="card" style="text-align: left;">
-                <h2>Active Shooter Workflow Application</h2>
-                <h4>Coordinated response in seconds, not minutes.</h4>
-            </div>
-            <br/><br/>
-            <div class="card">
-                <div class="left-column-image">
-                    <img src="images/Squire/activeshooter-nofly-device.png" alt="Squires Solutions software inface shown on desktop, mobile and tablet" />
-                </div>
-                <div class="right-column-text">
-                  
-                    <p class="cardBodyText">
-                        Squire's Active Shooter Module gives real-time visibility to law enforcement during critical incidents. 
-                        Teams can track shooter movement, unit positions, and manage response workflows directly in the field. </p>
-                    </p> 
-                    <p class="cardBodyText"> With live mapping, perimeter tools, and integrated command features, responders minimize radio traffic, improve 
-                        coordination across agencies, and save critical minutes when it matters most. 
-                    </p>
-                   
-                    <button type="button" class="btn btn-outline-primary"  onclick="document.location='https://www.squiresolutions.com/product/active-shooter/'">View On Squire's Website</button>
-                    <br/><br/>
-                </div>
-            </div> 
-            <br />
-            <div class="card alt-section" style="text-align: left;">
-                <p class="cardBodyText">
-                    <ol style="text-decoration: none; list-style: none;">
-                        <li><strong>Response Time Reduction</strong><br/>Decrease in incident response times by up to 40%, allowing teams to neutralize threats faster.</li><br/>
-                        <li><strong>Improved Inter-Agency Coordination</strong><br/>30% increase in coordination efficiency among law enforcement, SWAT, EMS, and fire departments.</li><br/>
-                        <li><strong>Radio Traffic Reduction</strong><br/>30% reduction in non-essential radio communication, freeing up channels for critical updates.</li><br/>
-                        <li><strong>Casualty Management Efficiency</strong><br/>50% faster EMS response to casualty collection points, improving survival rates.</li><br/>
-                        <li><strong>Perimeter Security Accuracy</strong><br/>100% real-time accuracy in establishing and adjusting secure perimeters for improved containment.</li>
-                    </ol>
-                    <br/>
-                    These measurable KPIs demonstrate the value Squire's Active Shooter Module brings to law enforcement, ensuring faster, more effective, 
-                    and coordinated responses that save lives during high-risk situations.
-                </p>
-            </div>
-            <br/><br/>
-        </section>
-        
-        <!-- MEDEVAC Module -->
-        <section id="medevac-wrapper" style="text-align: center;">
-            <br/><br/>
-            <div class="card" style="text-align: left;">
-                <h2>MEDEVAC Module</h2>
-                <h4>Every second counts. Make each one matter.</h4>
-            </div>
-            <br/><br/>
-            <div class="card">
-                <div class="right-column-image">
-                    <img src="images/Squire/medevac-devices-3-mobile.png" alt="Image of desktop version of the homepage with two mobile examples of the product pages" />
-                </div>
+<div class="tile reveal" style="background: var(--bg-b); border: 2px solid var(--line); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 52px; line-height: 1; font-weight: 700; color: var(--brand)">40%</p>
+<div aria-hidden="true" style="height: 10px; background: var(--line); border-radius: 5px; overflow: hidden"><div class="bar" style="width: 40%; height: 100%; background: var(--accent)"></div></div>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 700; color: var(--ink)">Response Time Reduction</h3>
+<p style="margin: 0; font-size: 16px">Decrease in incident response times by up to 40%, allowing teams to neutralize threats faster.</p>
+</div>
 
-                <div class="right-column-text">
-                    
-                    <p class="cardBodyText">
-                        The MEDEVAC Module transforms the speed and accuracy of battlefield medical evacuations by reducing response times 
-                        from minutes to seconds. 
-                        <br /><br />
-                        By eliminating information gaps and minimizing human error, Squire ensures faster deployment, accurate medical 
-                        decision-making, and optimized use of the golden hour; when lives are most at risk.
-                    </p>
-                   
-                    <button type="button" class="btn btn-outline-primary"  onclick="document.location='https://www.squiresolutions.com/medevac/'">View On Squire's Website</button>
-                    <br/><br/>
-                </div>  
-            </div>  
-            <br/>
-            <div class="card" style="text-align: left;">
+<div class="tile reveal" style="background: var(--bg-b); border: 2px solid var(--line); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 52px; line-height: 1; font-weight: 700; color: var(--brand)">30%</p>
+<div aria-hidden="true" style="height: 10px; background: var(--line); border-radius: 5px; overflow: hidden"><div class="bar" style="width: 30%; height: 100%; background: var(--accent)"></div></div>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 700; color: var(--ink)">Improved Inter-Agency Coordination</h3>
+<p style="margin: 0; font-size: 16px">Increase in coordination efficiency among law enforcement, <abbr title="Special Weapons and Tactics">SWAT</abbr>, <abbr title="emergency medical services">EMS</abbr>, and fire departments.</p>
+</div>
 
-                <p class="cardBodyText">
-                    <ol style="text-decoration: none; list-style: none;">
-                        <li><strong>Time to MEDEVAC Launch</strong><br/>Reduced from an average of 22.7 minutes to less than 1 minute.</li><br/>
-                        <li><strong>Error Reduction</strong><br/>Virtually eliminates human error due to automated transmission of critical data.</li><br/>
-                        <li><strong>Golden Hour Utilization</strong><br/>Maximizes available time for medical care by streamlining the entire MEDEVAC request process.</li><br/>
-                        <li><strong>Communication Efficiency</strong><br/>Provides uninterrupted, real-time data sharing between teams in the field and command, reducing confusion and miscommunication.</li><br/>
-                        <li><strong>Biometric Tracking</strong><br/>Continuously monitors patient vitals, allowing for faster and more accurate medical decision-making.</li>
-                    </ol>
-                    <br/>
-                    These KPIs track significant improvements in MEDEVAC operations, including a drastic reduction in time to launch from an average of 22.7 minutes to under 1 minute, the near 
-                    elimination of human error through automated data transmission, maximized golden hour utilization by streamlining the MEDEVAC request process, enhanced communication efficiency 
-                    with real-time data sharing between teams and command, and continuous biometric tracking for faster, more accurate medical decision-making.
-                </p>
-            </div>
-            <br/><br/>
-        </section>  
-        
-        <!-- UAS Module -->
-        <section id="uas-module-wrapper" style="text-align: center;">
-            <br/><br/>
-            <div class="card alt-section" style="text-align: left;">
-                <h2>UAS Module</h2>
-                <h4>Faster response, broader coverage, and higher mission success rates.</h4>
-            </div>
-            <br/><br/>
-            <div class="card alt-section">
-                <div class="left-column-image">
-                 <img src="images/Squire/uas-devices.png" alt="Squires Solutions software inface shown on desktop, mobile and tablet" />
-                </div>
+<div class="tile reveal" style="background: var(--bg-b); border: 2px solid var(--line); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 52px; line-height: 1; font-weight: 700; color: var(--brand)">30%</p>
+<div aria-hidden="true" style="height: 10px; background: var(--line); border-radius: 5px; overflow: hidden"><div class="bar" style="width: 30%; height: 100%; background: var(--accent)"></div></div>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 700; color: var(--ink)">Radio Traffic Reduction</h3>
+<p style="margin: 0; font-size: 16px">Reduction in non-essential radio communication, freeing up channels for critical updates.</p>
+</div>
 
-                <div class="right-column-text">
-            
-                <p class="cardBodyText">
-                    The UAS Module revolutionizes how operators interact with drones by shifting from a 1:1 control model to a 1:Many system. 
-                    <br /><br />
-                    The platform enables seamless, semi-autonomous drone behaviors, allowing operators to manage multiple drones 
-                    simultaneously while maintaining full situational awareness. Operators can control, monitor, and modify drone behaviors on 
-                    the fly, ensuring faster, more effective mission outcomes. 
-                   
-                
-                </p>
+<div class="tile reveal" style="background: var(--bg-b); border: 2px solid var(--line); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 52px; line-height: 1; font-weight: 700; color: var(--brand)">50%</p>
+<div aria-hidden="true" style="height: 10px; background: var(--line); border-radius: 5px; overflow: hidden"><div class="bar" style="width: 50%; height: 100%; background: var(--accent)"></div></div>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 700; color: var(--ink)">Casualty Management Efficiency</h3>
+<p style="margin: 0; font-size: 16px">Faster EMS response to casualty collection points, improving survival rates.</p>
+</div>
 
-                <!-- <button type="button" class="btn btn-primary">View Case Study</button> -->
-                <button type="button" class="btn btn-outline-primary"  onclick="document.location='https://www.squiresolutions.com/uas/'">View On Squire's Website</button>
-                <br/><br/>
-                </div>
-            </div>    
-            <br/>
-            <div class="card alt-section" style="text-align: left;">
-               
-                <p class="cardBodyText">
-                    <ol style="text-decoration: none; list-style: none;">
-                        <li><strong>Response Time Efficiency</strong><br/>Time reduction in managing drone swarms compared to traditional single-drone control.<br/> Target: Reduce time to deploy multiple drones by 80%.</li><br/>
-                        <li><strong>Operational Coverage</strong><br/>Number of drones controlled per operator.<br/>Target: Expand operator capabilities to control 1:Many drones seamlessly.</li><br/>
-                        <li><strong>Error Reduction</strong><br/>Incidence of human error in drone mission control and sensor management.<br/>Target: Decrease operational errors by 90% due to AI-enhanced autonomous behaviors.</li><br/>
-                        <li><strong>Situational Awareness</strong><br/>Number of operators receiving critical updates from drones in real time.<br/>Target: Ensure 100% of operators maintain full situational awareness of all drones.</li><br/>
-                        <li><strong>Mission Success Rate</strong><br/>Percentage of missions successfully completed with drone swarms.<br/>Target: Achieve a 95% success rate in mission execution using the UAS Module.</li><br/>
-                        <li><strong>Airspace Deconfliction</strong><br/>Time taken to achieve seamless deconfliction and prioritization of drone swarms.<br/>Target: Reduce airspace conflicts by 90%.</li>
-                    </ol>
-                    <br/>
-                    These KPIs track the effectiveness of Squire's UAS Module in transforming drone operations, increasing efficiency, 
-                    reducing errors, and maximizing mission success.
-                </p>
-            </div>
-            <br/><br/><br/><br/>
-        </section>
-    <!-- 
-        -- Website Redesign --
-        <section id="website-redesign-wrapper" style="text-align: center;">
-            <br/><br/>
-            <div class="card">
-                <div class="left-column-image">
-                    <img src="images/Squire/web-mobile-images.png" alt="Image of desktop version of the homepage with two mobile examples of the product pages" />
-                </div>
-                <div class="right-column-text">
-                    <h2>Website Redesign</h2>
-                    <p class="cardBodyText">
-                        Created a responsive marketing website using WordPress. Designed graphics to present and explain 
-                        Squire Solutions software offerings to potential customers.
-                        <br /><br />
-                    </p>
-                    <button type="button" class="btn btn-outline-primary"  onclick="document.location='https://www.squiresolutions.com'">View Squire's Website</button>
-                    <br/><br/><br />
-                </div>
-            </div> 
-        </section>
-    -->
-        <section class="connect" id="contact">
-            <div class="overlay">
-              <h1>Looking for a product designer who can make clarity feel effortless?</h1> <br>
-               <a href="mailto:audra@amillerdesigns.com" class="btn btn-primary">Let's Connect!</i></a> <br><br><br>
+<div class="tile reveal" style="background: var(--bg-b); border: 2px solid var(--line); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 52px; line-height: 1; font-weight: 700; color: var(--brand)">100%</p>
+<div aria-hidden="true" style="height: 10px; background: var(--line); border-radius: 5px; overflow: hidden"><div class="bar" style="width: 100%; height: 100%; background: var(--accent)"></div></div>
+<h3 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 700; color: var(--ink)">Perimeter Security Accuracy</h3>
+<p style="margin: 0; font-size: 16px">Real-time accuracy in establishing and adjusting secure perimeters for improved containment.</p>
+</div>
 
-               <a href="https://www.linkedin.com/in/audra-m-a384b991/"> 
-                <img src="images/linkedin.svg" class="linkedin" alt="Linkedin"/> 
-               </a> 
-            </div>
-        </section>
+</div>
+<p class="reveal" style="margin: 0; max-width: 42em">These measurable <abbr title="key performance indicators">KPIs</abbr> demonstrate the value Squire's Active Shooter Module brings to law enforcement, ensuring faster, more effective, and coordinated responses that save lives during high-risk situations.</p>
+</div>
+</section>
 
-        <footer id="footer">
-            <div class="copyRight">
-                <p class="copyRight">&#169; 2026 Audra Miller <br><br> All rights reserved.</p>
-            </div>
-        </footer>
+<section aria-labelledby="medevac-title" style="background: var(--bg-b); padding: clamp(56px, 7vw, 96px) clamp(16px, 4vw, 40px)">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+<div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: clamp(28px, 5vw, 72px); align-items: center">
+<div style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start">
+<p style="margin: 0; font-size: 16px; font-weight: 700; letter-spacing: 0.08em; color: var(--brand)">// MODULE 02</p>
+<h2 id="medevac-title" style="margin: 0; font-size: clamp(28px, 3vw, 36px); line-height: 1.2; font-weight: 700; color: var(--ink)"><abbr title="medical evacuation">MEDEVAC</abbr> Module</h2>
+<p style="margin: 0; font-size: 22px; line-height: 1.4; font-weight: 500; color: var(--brand)">Every second counts. Make each one matter.</p>
+<div style="display: flex; flex-direction: column; gap: 2.4em; max-width: 34em">
+<p style="margin: 0">The MEDEVAC Module transforms the speed and accuracy of battlefield medical evacuations by reducing response times from minutes to seconds.</p>
+<p style="margin: 0">By eliminating information gaps and minimizing human error, Squire ensures faster deployment, accurate medical decision-making, and optimized use of the golden hour; when lives are most at risk.</p>
+</div>
+<a class="btn btn-plum" aria-label="MEDEVAC on Squire's website (opens in a new tab)" href="https://www.squiresolutions.com/medevac/" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; margin-top: 8px; padding: 0 24px; background: var(--btn); color: var(--btn-ink); font-weight: 700; text-decoration: none; border-radius: 4px" target="_blank" rel="noopener">MEDEVAC on Squire's website <span class="arrow" aria-hidden="true" style="display: inline-block">→</span></a>
+</div>
+<div class="shot" style="background: var(--matte-a); border-radius: 8px; padding: clamp(16px, 3vw, 40px)">
+<img src="images/site/squire-medevac.png" alt="Squire MEDEVAC module on a phone, a tablet and a second phone, showing a patient report, an aerial map and a nine-line request form." style="display: block; width: 100%; height: auto">
+</div>
+</div>
 
-                <!--Call for nav hamburger menu-->
-                <script>
-                    function toggleMenu() {
-                    const nav = document.getElementById("navMenu");
-                   nav.classList.toggle("show");
-                   }
-               </script>
-       
-    </body>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 24px; align-items: stretch">
+
+<div class="tile reveal" style="background: #1C1C1C; border: 2px solid #1C1C1C; border-radius: 8px; padding: clamp(24px, 3vw, 40px); display: flex; flex-direction: column; gap: 20px; justify-content: center">
+<h3 style="margin: 0; font-size: 20px; line-height: 1.3; font-weight: 700; color: #F5F5F5">Time to MEDEVAC Launch</h3>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 17px; color: #F5F5F5">Before: an average of <strong>22.7 minutes</strong></p>
+<div aria-hidden="true" style="height: 12px; background: #D1BEC6; border-radius: 6px"></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 17px; color: #F5F5F5">With Squire: <strong>less than 1 minute</strong></p>
+<div aria-hidden="true" style="height: 12px; background: #3D3D3D; border-radius: 6px; overflow: hidden"><div class="bar" style="width: 4.4%; height: 100%; background: #F9A8D8"></div></div>
+</div>
+<p style="margin: 0; font-size: 64px; line-height: 1; font-weight: 700; color: #F9A8D8">&lt;1 min</p>
+</div>
+
+<div class="reveal" style="background: var(--bg-a); border-radius: 8px; padding: clamp(24px, 3vw, 40px)">
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 20px">
+<li style="display: flex; gap: 14px; align-items: flex-start">
+<svg aria-hidden="true" viewBox="0 0 24 24" style="flex: none; width: 24px; height: 24px; margin-top: 3px"><path d="M4 12.5l5 5L20 6.5" fill="none" style="stroke: var(--brand)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<div><h3 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 700; color: var(--ink)">Error Reduction</h3><p style="margin: 4px 0 0; font-size: 16px">Virtually eliminates human error due to automated transmission of critical data.</p></div>
+</li>
+<li style="display: flex; gap: 14px; align-items: flex-start">
+<svg aria-hidden="true" viewBox="0 0 24 24" style="flex: none; width: 24px; height: 24px; margin-top: 3px"><path d="M4 12.5l5 5L20 6.5" fill="none" style="stroke: var(--brand)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<div><h3 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 700; color: var(--ink)">Golden Hour Utilization</h3><p style="margin: 4px 0 0; font-size: 16px">Maximizes available time for medical care by streamlining the entire MEDEVAC request process.</p></div>
+</li>
+<li style="display: flex; gap: 14px; align-items: flex-start">
+<svg aria-hidden="true" viewBox="0 0 24 24" style="flex: none; width: 24px; height: 24px; margin-top: 3px"><path d="M4 12.5l5 5L20 6.5" fill="none" style="stroke: var(--brand)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<div><h3 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 700; color: var(--ink)">Communication Efficiency</h3><p style="margin: 4px 0 0; font-size: 16px">Provides uninterrupted, real-time data sharing between teams in the field and command, reducing confusion and miscommunication.</p></div>
+</li>
+<li style="display: flex; gap: 14px; align-items: flex-start">
+<svg aria-hidden="true" viewBox="0 0 24 24" style="flex: none; width: 24px; height: 24px; margin-top: 3px"><path d="M4 12.5l5 5L20 6.5" fill="none" style="stroke: var(--brand)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<div><h3 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 700; color: var(--ink)">Biometric Tracking</h3><p style="margin: 4px 0 0; font-size: 16px">Continuously monitors patient vitals, allowing for faster and more accurate medical decision-making.</p></div>
+</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<section aria-labelledby="uas-title" style="background: var(--bg-a); padding: clamp(56px, 7vw, 96px) clamp(16px, 4vw, 40px)">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+<div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: clamp(28px, 5vw, 72px); align-items: center">
+<div class="shot" style="background: var(--matte-b); border-radius: 8px; padding: clamp(16px, 3vw, 40px)">
+<img src="images/site/squire-uas.png" alt="Squire UAS module on a tablet and two phones, showing drone flight controls over an aerial map." style="display: block; width: 100%; height: auto">
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start">
+<p style="margin: 0; font-size: 16px; font-weight: 700; letter-spacing: 0.08em; color: var(--brand)">// MODULE 03</p>
+<h2 id="uas-title" style="margin: 0; font-size: clamp(28px, 3vw, 36px); line-height: 1.2; font-weight: 700; color: var(--ink)"><abbr title="unmanned aircraft system">UAS</abbr> Module</h2>
+<p style="margin: 0; font-size: 22px; line-height: 1.4; font-weight: 500; color: var(--brand)">Faster response, broader coverage, and higher mission success rates.</p>
+<div style="display: flex; flex-direction: column; gap: 2.4em; max-width: 34em">
+<p style="margin: 0">The UAS Module revolutionizes how operators interact with drones by shifting from a 1:1 control model to a 1:Many system. The platform enables seamless, semi-autonomous drone behaviors, allowing operators to manage multiple drones simultaneously while maintaining full situational awareness.</p>
+<p style="margin: 0">Operators can control, monitor, and modify drone behaviors on the fly, ensuring faster, more effective mission outcomes.</p>
+</div>
+<a class="btn btn-plum" aria-label="UAS on Squire's website (opens in a new tab)" href="https://www.squiresolutions.com/uas/" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; margin-top: 8px; padding: 0 24px; background: var(--btn); color: var(--btn-ink); font-weight: 700; text-decoration: none; border-radius: 4px" target="_blank" rel="noopener">UAS on Squire's website <span class="arrow" aria-hidden="true" style="display: inline-block">→</span></a>
+</div>
+</div>
+
+<h3 class="reveal" style="margin: 0; font-size: 22px; line-height: 1.3; font-weight: 700; color: var(--ink)">Targets the module is measured against</h3>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 20px">
+
+<div class="tile reveal" style="background: var(--bg-b); border: 2px solid var(--line); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 16px; font-weight: 700; letter-spacing: 0.08em; color: var(--body)">TARGET</p>
+<p style="margin: 0; font-size: 52px; line-height: 1; font-weight: 700; color: var(--brand)">80%</p>
+<div aria-hidden="true" style="height: 10px; background: var(--line); border-radius: 5px; overflow: hidden"><div class="bar" style="width: 80%; height: 100%; background: var(--accent)"></div></div>
+<h4 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 700; color: var(--ink)">Response Time Efficiency</h4>
+<p style="margin: 0; font-size: 16px">Reduce time to deploy multiple drones, compared to traditional single-drone control.</p>
+</div>
+
+<div class="tile reveal" style="background: var(--bg-b); border: 2px solid var(--line); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 16px; font-weight: 700; letter-spacing: 0.08em; color: var(--body)">TARGET</p>
+<p style="margin: 0; font-size: 52px; line-height: 1; font-weight: 700; color: var(--brand)">1:Many</p>
+<div aria-hidden="true" style="height: 10px; background: var(--line); border-radius: 5px; overflow: hidden"><div class="bar" style="width: 100%; height: 100%; background: var(--accent)"></div></div>
+<h4 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 700; color: var(--ink)">Operational Coverage</h4>
+<p style="margin: 0; font-size: 16px">Expand operator capabilities to control many drones per operator seamlessly.</p>
+</div>
+
+<div class="tile reveal" style="background: var(--bg-b); border: 2px solid var(--line); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 16px; font-weight: 700; letter-spacing: 0.08em; color: var(--body)">TARGET</p>
+<p style="margin: 0; font-size: 52px; line-height: 1; font-weight: 700; color: var(--brand)">90%</p>
+<div aria-hidden="true" style="height: 10px; background: var(--line); border-radius: 5px; overflow: hidden"><div class="bar" style="width: 90%; height: 100%; background: var(--accent)"></div></div>
+<h4 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 700; color: var(--ink)">Error Reduction</h4>
+<p style="margin: 0; font-size: 16px">Decrease operational errors in drone mission control and sensor management through <abbr title="artificial intelligence">AI</abbr>-enhanced autonomous behaviors.</p>
+</div>
+
+<div class="tile reveal" style="background: var(--bg-b); border: 2px solid var(--line); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 16px; font-weight: 700; letter-spacing: 0.08em; color: var(--body)">TARGET</p>
+<p style="margin: 0; font-size: 52px; line-height: 1; font-weight: 700; color: var(--brand)">100%</p>
+<div aria-hidden="true" style="height: 10px; background: var(--line); border-radius: 5px; overflow: hidden"><div class="bar" style="width: 100%; height: 100%; background: var(--accent)"></div></div>
+<h4 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 700; color: var(--ink)">Situational Awareness</h4>
+<p style="margin: 0; font-size: 16px">Ensure every operator maintains full situational awareness of all drones, with critical updates in real time.</p>
+</div>
+
+<div class="tile reveal" style="background: var(--bg-b); border: 2px solid var(--line); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 16px; font-weight: 700; letter-spacing: 0.08em; color: var(--body)">TARGET</p>
+<p style="margin: 0; font-size: 52px; line-height: 1; font-weight: 700; color: var(--brand)">95%</p>
+<div aria-hidden="true" style="height: 10px; background: var(--line); border-radius: 5px; overflow: hidden"><div class="bar" style="width: 95%; height: 100%; background: var(--accent)"></div></div>
+<h4 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 700; color: var(--ink)">Mission Success Rate</h4>
+<p style="margin: 0; font-size: 16px">Achieve a 95% success rate in mission execution using drone swarms.</p>
+</div>
+
+<div class="tile reveal" style="background: var(--bg-b); border: 2px solid var(--line); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 16px; font-weight: 700; letter-spacing: 0.08em; color: var(--body)">TARGET</p>
+<p style="margin: 0; font-size: 52px; line-height: 1; font-weight: 700; color: var(--brand)">90%</p>
+<div aria-hidden="true" style="height: 10px; background: var(--line); border-radius: 5px; overflow: hidden"><div class="bar" style="width: 90%; height: 100%; background: var(--accent)"></div></div>
+<h4 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 700; color: var(--ink)">Airspace Deconfliction</h4>
+<p style="margin: 0; font-size: 16px">Reduce airspace conflicts through seamless deconfliction and prioritization of drone swarms.</p>
+</div>
+
+</div>
+<p class="reveal" style="margin: 0; max-width: 42em">These KPIs track the effectiveness of Squire's UAS Module in transforming drone operations, increasing efficiency, reducing errors, and maximizing mission success.</p>
+</div>
+</section>
+
+<section id="contact" class="contact" aria-labelledby="contact-title" style="background-color: #1C1C1C; padding: clamp(56px, 8vw, 112px) clamp(16px, 4vw, 40px)">
+<div class="reveal" style="max-width: 860px; margin: 0 auto; background: #1C1C1C; padding: clamp(28px, 4vw, 56px); display: flex; flex-direction: column; gap: 24px; align-items: flex-start">
+<h2 id="contact-title" style="margin: 0; font-size: clamp(30px, 3.4vw, 44px); line-height: 1.2; font-weight: 700; color: #F5F5F5; text-wrap: balance">Looking for a product designer who can make clarity feel effortless?</h2>
+<div class="bar" aria-hidden="true" style="width: 120px; height: 6px; background: var(--accent)"></div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<a class="btn btn-pink" href="mailto:audra@amillerdesigns.com" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; background: #F9A8D8; color: #1C1C1C; font-weight: 700; text-decoration: none; border-radius: 4px">Let's Connect: email Audra <span class="arrow" aria-hidden="true" style="display: inline-block">→</span></a>
+<a class="btn btn-ghost" aria-label="Audra on LinkedIn (opens in a new tab)" href="https://www.linkedin.com/in/audra-m-a384b991/" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; background: transparent; color: #FCF1FC; border: 2px solid #FCF1FC; font-weight: 700; text-decoration: none; border-radius: 4px" target="_blank" rel="noopener">
+<svg aria-hidden="true" viewBox="0 0 24 24" style="width: 20px; height: 20px"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3v-11zm6.5 0h3.8v1.6h.06c.53-.95 1.83-1.95 3.76-1.95 4.02 0 4.88 2.5 4.88 5.9v5.45h-4v-4.8c0-1.3-.03-2.95-1.9-2.95-1.9 0-2.2 1.4-2.2 2.85v4.9h-4v-11z"></path></svg>
+Audra on LinkedIn</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer style="background: #1E1E1E; min-height: 200px; padding: 24px 16px; text-align: center">
+<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #D1BEC6">© 2026 Audra Miller<br><br>All rights reserved.</p>
+</footer>
+
+</div>
+</body>
 </html>
